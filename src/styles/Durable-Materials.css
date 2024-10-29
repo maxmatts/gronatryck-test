@@ -1,7 +1,7 @@
 .sustainability-page-container {
-    width: 90%;
+   
     margin: auto;
-    max-width: 900px;
+    
 }
 
 .info-box-container {
@@ -81,7 +81,7 @@
   }
   
   .certification-item {
-    flex: 1 1 200px; 
+    flex: 1 1 45%; 
     margin: 1rem; 
     display: flex;
     flex-direction: column;
@@ -96,17 +96,19 @@
   
 
   .certification-item-2{
-    flex: 1 1 200px; 
+    flex: 1 ; 
     margin: 1rem; 
     display: flex;
     flex-direction: column;
+    margin-right: 10rem;
+    
    
   }
 
   .certification-item-2 img{
     flex: 1; 
     margin: 1rem; 
-    max-width: 200px;
+   
    
   }
 

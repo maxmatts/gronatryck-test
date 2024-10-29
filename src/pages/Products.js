@@ -64,31 +64,30 @@ const Products = () => {
   const uniqueSizes = getUniqueSizes(products);
 
   const filteredProducts = products
-  .filter((product) => {
-    const matchesCategory =
-      category && category !== "alla produkter"
-        ? product.category.toLowerCase() === category.toLowerCase()
-        : true;
-    const matchesColor =
-      selectedColors.length > 0
-        ? product.images.variants?.some((variant) =>
-            selectedColors.includes(variant.colorName.toLowerCase())
-          )
-        : true;
+    .filter((product) => {
+      const matchesCategory =
+        category && category !== "alla produkter"
+          ? product.category.toLowerCase() === category.toLowerCase()
+          : true;
+      const matchesColor =
+        selectedColors.length > 0
+          ? product.images.variants?.some((variant) =>
+              selectedColors.includes(variant.colorName.toLowerCase())
+            )
+          : true;
 
-    const matchesBrand =
-      selectedBrands.length > 0
-        ? selectedBrands.includes(product.brand?.toLowerCase())
-        : true;
+      const matchesBrand =
+        selectedBrands.length > 0
+          ? selectedBrands.includes(product.brand?.toLowerCase())
+          : true;
 
-    const matchesSize =
-      selectedSizes.length > 0
-        ? selectedSizes.some((size) => product.sizeVariants?.includes(size))
-        : true;
+      const matchesSize =
+        selectedSizes.length > 0
+          ? selectedSizes.some((size) => product.sizeVariants?.includes(size))
+          : true;
 
-    return matchesCategory && matchesColor && matchesBrand && matchesSize;
-  })
-
+      return matchesCategory && matchesColor && matchesBrand && matchesSize;
+    })
 
     .sort((a, b) => {
       if (sort === "Nyast") return b.date - a.date;
@@ -158,9 +157,8 @@ const Products = () => {
   return (
     <div className="product-page">
       <div className="heading-margin">
-       
         <h2 className="subheading-1">{title}</h2>
-        
+
         {/* <p className="main-body">
           
           Upptäck ett noga utvalt sortiment av profilkläder och produkter som
@@ -173,14 +171,16 @@ const Products = () => {
       </div>
 
       <div className="product-wrapper">
-      <Breadcrumb />
+        <Breadcrumb />
         <div className="filter-wrapper">
           <button
             className="filter-toggle-btn"
             onClick={() => setIsFilterVisible((prev) => !prev)}
           >
             Filtrea och sortera
-            <span className="toggle-arrow">{isFilterVisible ? "▲" : "▼"}</span>
+            <span className={`toggle-arrow ${isFilterVisible ? "active" : ""}`}>
+              <LuChevronDown />
+            </span>
           </button>
 
           {isFilterVisible && (
@@ -255,17 +255,23 @@ const Products = () => {
               </div>
 
               <div className="filter-group">
-                <h3
-                  className="main-body"
+                <button
+                  className="filter-btn"
                   onClick={() => setIsBrandDropdownOpen((prev) => !prev)}
-                  style={{ cursor: "pointer" }}
                 >
-                  Varumärke{" "}
-                  {selectedBrands.length > 0 && `(${selectedBrands.length})`}
-                  <span className="toggle-arrow">
-                    {isBrandDropdownOpen ? "▲" : "▼"}
+                  <h3 className="main-body">
+                    Varumärke{" "}
+                    {selectedBrands.length > 0 && `(${selectedBrands.length})`}
+                  </h3>
+                  <span
+                    className={`arrow-icon ${
+                      isBrandDropdownOpen ? "active" : ""
+                    }`}
+                  >
+                    <LuChevronDown />
                   </span>
-                </h3>
+                </button>
+
                 {isBrandDropdownOpen && (
                   <div className="dropdown-menu">
                     {uniqueBrands.map((brand) => (
@@ -288,17 +294,23 @@ const Products = () => {
               </div>
 
               <div className="filter-group">
-                <h3
-                  className="main-body"
+                <button
+                  className="filter-btn"
                   onClick={() => setIsSizeDropdownOpen((prev) => !prev)}
-                  style={{ cursor: "pointer" }}
                 >
-                  Storlek{" "}
-                  {selectedSizes.length > 0 && `(${selectedSizes.length})`}
-                  <span className="toggle-arrow">
-                    {isSizeDropdownOpen ? "▲" : "▼"}
+                  <h3 className="main-body">
+                    Storlek{" "}
+                    {selectedSizes.length > 0 && `(${selectedSizes.length})`}
+                  </h3>
+                  <span
+                    className={`arrow-icon ${
+                      isSizeDropdownOpen ? "active" : ""
+                    }`}
+                  >
+                    <LuChevronDown />
                   </span>
-                </h3>
+                </button>
+
                 {isSizeDropdownOpen && (
                   <div className="dropdown-menu">
                     {uniqueSizes.map((size) => (

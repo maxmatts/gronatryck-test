@@ -39,6 +39,7 @@ body {
   font-size: var(--fontSizeSM);
   font-family: var(--bodyFont);
   line-height: 1.6;
+ 
 }
 a {
   text-decoration: none;
@@ -89,7 +90,7 @@ a {
 }
 
 .container {
-  max-width: 1376px;
+  max-width: 1300px;
   margin-inline: auto;
 }
 .small-spacing {

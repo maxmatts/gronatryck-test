@@ -120,11 +120,11 @@ function OrderHistory({ orders }) {
               <p>Status: Behandlas</p>
               <h3>Order-ID: {order.orderId}</h3>
               <p>Datum: {order.orderDate}</p>
-              <p>Totalkostnad: {order.totalCost} SEK</p>
+              <p>Totalkostnad:  {order.totalCost} SEK</p>
               <ul>
                 {order.items.map((item, idx) => (
                   <li key={idx}>
-                    {item.name} - Antal: {item.totalQuantity} - Pris: {item.pricePerItem} SEK
+                    {item.name} - Antal: {item.totalQuantity} - Pris: {item.pricePerItem} ST/SEK
                   </li>
                 ))}
               </ul>

@@ -1,24 +1,19 @@
 .product-wrapper {
   display: flex;
   flex-wrap: wrap;
-  max-width: 1440px;
-  width: 80%;
-  margin-inline: auto;
-
-  gap: 1rem;
+  max-width: 1300px; 
+  width: 70%; 
+  margin: 0 auto; 
+  gap: 1rem; 
 }
 
 .card {
-  display: flex;
-  flex-direction: column;
-  width: 48%;
-  max-width: 300px;
-  overflow: hidden;
-
+  flex: 1 1 100%;
+  max-width: 300px; 
   border-radius: 0.6rem;
-
-  padding: 0;
-  margin: 0;
+  overflow: hidden; 
+  margin: 0; 
+  padding: 0; 
 }
 
 .card-content {
@@ -100,24 +95,5 @@
   opacity: 0;
 }
 
-@media (min-width: 768px) {
-  .product-wrapper {
-    width: 80%;
-  }
 
-  .card {
-    max-width: 25rem;
-  }
-}
 
-@media (min-width: 1005px) {
-  .product-wrapper {
-    width: 70%;
-  }
-}
-
-@media (min-width: 1500px) {
-  .product-wrapper {
-    width: 60%;
-  }
-}

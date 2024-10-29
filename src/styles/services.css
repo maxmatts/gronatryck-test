@@ -102,9 +102,5 @@ General Styles
     }
   }
   
-  @media (min-width: 1500px) {
-    .container {
-      width: 60%;
-    }
-  }
+
   

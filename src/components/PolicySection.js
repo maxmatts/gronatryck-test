@@ -1,12 +1,16 @@
-
+// Importerar React för att kunna använda JSX
 import React from "react";
+// Importerar CSS-stilfilen för FAQ-sektionen
 import "../styles/FAQ.css"; 
 
+// Definierar PolicySection-komponenten
 const PolicySection = () => {
   return (
+    // Sektion för FAQ med ett unikt ID för navigering
     <section className="faq-section" id="policy">
+      {/* Varje FAQ-item representeras av en div */}
       <div className="faq-item">
-        <h2 className="subheading-1">Dataskyddsfrågor</h2>
+        <h2 className="subheading-1">Dataskyddsfrågor</h2> {/* Rubrik för sektionen */}
         <p className="main-body long">
           Vi på Gröna Tryck tar din personliga integritet på största allvar. Vi lagerhåller dina företag- eller personuppgifter du har uppgett för oss och sparar dessa för leveranser, samt fakturering...
         </p>
@@ -78,4 +82,6 @@ const PolicySection = () => {
   );
 };
 
+// Exporterar PolicySection-komponenten för användning i andra delar av applikationen
 export default PolicySection;
+

@@ -2,8 +2,6 @@ import React, { useState } from "react";
 import Button from "../components/Button";
 import "../styles/Stanley.css";
 
-
-
 const scrollCarousel = (direction) => {
   const carousel = document.querySelector(".image-carousel");
   const scrollAmount = direction === 1 ? 200 : -200;
@@ -24,7 +22,6 @@ const Stanley = () => {
         />
         <div className="hero-content-container container">
           <div className="hero-content">
-          
             <h1 className="main-heading">Stanley Stella</h1>
             <p>
               Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
@@ -38,7 +35,6 @@ const Stanley = () => {
                 content={"Se sortiment"}
                 className="main-btn"
               />
-             
             </div>
           </div>
         </div>
@@ -47,44 +43,46 @@ const Stanley = () => {
       <div id="stanley-section" className="stanley">
         <div id="stanley-container" className="stanley-container">
           <div className="stanley-text-container">
-          <div className="text-container main-body">
-            <h1 className="section-heading heading-3">
-              Hållbara Kläder i Toppklass
-            </h1>
-            <p className="main-body">
-              Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
-              erbjuda kläder som kombinerar stil, kvalitet och hållbarhet. Sedan
-              2021 är vi stolta över att vara “Most Northern” Official Dealer
-              och Selected Dealer Outerwear. Kläderna är noggrant tillverkade
-              med en modern passform och en kvalitet som passar både företag,
-              organisationer och designers. Stanely/Stella erbjuder ett stort
-              utbud av säsongsanpassade färger och modeller samt möjlighet till
-              egen customisering som exempelvis eget tryck i nacken
-              <br /> <br />
-              Varje plagg är producerat med miljön och rättvisa arbetsvillkor i
-              åtanke och det finns transparens genom hela processen. Genom att
-              använda ekologisk och återvunnen bomull, återvunnen polyester och
-              Lenzing Modal, säkerställer de hållbara val i varje steg av
-              produktionen. Dessutom genomgår deras fabriker oberoende
-              kvalitets- och miljökontroller och följer Fairwear-principer.
-              <br />
-              <br />
-              Med Stanley/Stella kan du som kund känna stolthet över både stil
-              och hållbar produktion. Vi sätter sedan vår prägel på kläderna
-              genom egen patch, brodyr eller screentryck och hjälper dig att
-              matcha ditt varumärke med kläder av högsta kvalitet!
-              <br />
-              <br />
-            </p>
+            <div className="text-container main-body">
+              <h1 className="section-heading heading-3">
+                Hållbara Kläder i Toppklass
+              </h1>
+              <p className="main-body">
+                Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
+                erbjuda kläder som kombinerar stil, kvalitet och hållbarhet.
+                Sedan 2021 är vi stolta över att vara “Most Northern” Official
+                Dealer och Selected Dealer Outerwear. Kläderna är noggrant
+                tillverkade med en modern passform och en kvalitet som passar
+                både företag, organisationer och designers. Stanely/Stella
+                erbjuder ett stort utbud av säsongsanpassade färger och modeller
+                samt möjlighet till egen customisering som exempelvis eget tryck
+                i nacken
+                <br /> <br />
+                Varje plagg är producerat med miljön och rättvisa arbetsvillkor
+                i åtanke och det finns transparens genom hela processen. Genom
+                att använda ekologisk och återvunnen bomull, återvunnen
+                polyester och Lenzing Modal, säkerställer de hållbara val i
+                varje steg av produktionen. Dessutom genomgår deras fabriker
+                oberoende kvalitets- och miljökontroller och följer
+                Fairwear-principer.
+                <br />
+                <br />
+                Med Stanley/Stella kan du som kund känna stolthet över både stil
+                och hållbar produktion. Vi sätter sedan vår prägel på kläderna
+                genom egen patch, brodyr eller screentryck och hjälper dig att
+                matcha ditt varumärke med kläder av högsta kvalitet!
+                <br />
+                <br />
+              </p>
             </div>
 
             <div className="img-container">
-            <div className="img-wrapper">
-              <img
-                className="stanley-img"
-                src="./img/decorative/Feature-Stanley-Stella-1.jpg"
-                alt="About Image 1"
-              />
+              <div className="img-wrapper">
+                <img
+                  className="stanley-img"
+                  src="/img/decorative/Feature-Stanley-Stella-1.jpg"
+                  alt="En grupp modeller på tre personer som bär Stanley Stella kläder"
+                />
               </div>
             </div>
           </div>
@@ -104,35 +102,35 @@ const Stanley = () => {
 
               <div className="image-carousel">
                 <img
-                  src="./img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
                   alt="Product 1"
                 />
                 <img
-                  src="./img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
                   alt="Product 2"
                 />
                 <img
-                  src="./img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
                   alt="Product 3"
                 />
                 <img
-                  src="./img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
                   alt="Product 4"
                 />
-                 <img
-                  src="./img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
+                <img
+                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
                   alt="Product 1"
                 />
                 <img
-                  src="./img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
                   alt="Product 2"
                 />
                 <img
-                  src="./img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
                   alt="Product 3"
                 />
                 <img
-                  src="./img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
                   alt="Product 4"
                 />
               </div>

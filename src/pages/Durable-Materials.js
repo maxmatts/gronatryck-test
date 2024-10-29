@@ -3,7 +3,7 @@ import React from "react";
 
 const SustainabilityWork = () => {
   return (
-    <div className="sustainability-page-container">
+    <div className="sustainability-page-container container">
       <div className="cart-heading">
         <h1 className="heading-3 header-label">Hållbarhetsarbete</h1>
       </div>
@@ -241,15 +241,16 @@ const SustainabilityWork = () => {
 
         <section>
           <div className="certifications-container main-body main-body-spacing">
-            <div className="certification-summary">
+            <div className="flex certification-summary">
+            <h1 className="section-heading heading-3">
+                Ytterligare information
+              </h1>
               <p>
                 Vi säkerställer att våra leverantörer följer dessa standarder
                 genom oberoende granskningar, krav på levnadslön och rätt till
                 VAB, fria fackföreningar samt jämställdhetsarbete.
               </p>
-            </div>
-
-            <div className="main-body main-body-spacing">
+            <br></br>
               <p>
                 Har du ytterligare frågor om vårt hållbarhetsarbete är du alltid
                 välkommen att höra av dig – vi berättar gärna mer om hur vi

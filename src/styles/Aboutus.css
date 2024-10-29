@@ -2,7 +2,7 @@
 
 
 .aboutus-page-container {
-    width: 90%;
+    
     margin: auto;
     margin-top: 2rem;
 }
@@ -98,10 +98,7 @@
         justify-content: space-between;
     }
 
-    .aboutus-page-container {
-        width: 80%;
-    }
-    
+   
 
     .text-container {
         margin-right: 2rem; 
@@ -133,9 +130,7 @@
     margin-bottom: 0; 
 }
 
-.aboutus-page-container {
-        width: 70%;
-    }
+
 
 }
 
@@ -149,13 +144,11 @@
       }
   
       .about-img {
-          width: 25rem;
+          width: 35rem;
            
           margin:10rem 0 0 0; 
       }
   
 
-      .aboutus-page-container {
-        width: 60%;
-    }
+    
   } 

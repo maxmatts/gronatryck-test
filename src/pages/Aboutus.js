@@ -1,8 +1,8 @@
 import React from "react";
-import Button from "../components/Button";
-import "../styles/Aboutus.css";
-import FAQ from "../components/FAQ";
-import CustomerCases from "../components/Customer-logos";
+import Button from "../components/Button"; // Importerar Button-komponenten
+import "../styles/Aboutus.css"; // Importerar stilmallen för AboutUs-sidan
+import FAQ from "../components/FAQ"; // Importerar FAQ-komponenten
+import CustomerCases from "../components/Customer-logos"; // Importerar CustomerCases-komponenten
 
 const AboutUs = () => {
   return (
@@ -10,7 +10,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section className="hero-section-2">
         <img
-          src="./img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg"
+          src="./img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
           alt="Hero"
           className="hero-image"
           id="aboutus-hero-image"
@@ -30,7 +30,7 @@ const AboutUs = () => {
       </section>
 
       {/* About Us Content Section */}
-      <div className="aboutus-page">
+      <div className="aboutus-page container">
         <div id="aboutus-container" className="aboutus-page-container">
           <div className="about-text-containers">
             <div className="text-container main-body">
@@ -97,6 +97,7 @@ const AboutUs = () => {
           <h1 className="section-heading heading-3">I stolt samarbete med</h1>
           <div className="about-text-containers">
             <div className="logo-container">
+              {/* Partner-logos */}
               <img
                 src="./img/certificates/partners/atlantis-green-collection-logo-grona-tryck-2 2.png"
                 alt="Partner Logo"
@@ -164,20 +165,21 @@ const AboutUs = () => {
             </div>
           </div>
          
-          <FAQ></FAQ>
+          <FAQ /> {/* Renderar FAQ-komponenten */}
 
-          <CustomerCases></CustomerCases>
+          <CustomerCases /> {/* Renderar CustomerCases-komponenten */}
           <div className="btn-container">
               <Button
-            to="/kundcase"
-            className=" main-btn btn-container"
-            content="Se mer om våra arbeten"
-          />
-</div>
+                to="/kundcase" // Länk till kundcase-sidan
+                className="main-btn btn-container"
+                content="Se mer om våra arbeten"
+              />
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default AboutUs;
+export default AboutUs; // Exporterar AboutUs-komponenten
+

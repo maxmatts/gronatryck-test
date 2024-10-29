@@ -105,6 +105,11 @@ const ProductDetail = () => {
       return;
     }
 
+    if (totalQuantity < 10) {
+      setConfirmationMessage("Du måste lägga till minst 10 i kvantitet."); // Provide feedback
+      return;
+  }
+
     // Iterate over size quantities and add to cart for each size/color combo
     Object.entries(sizeQuantities).forEach(([key, quantity]) => {
       if (quantity > 0) {
@@ -161,6 +166,8 @@ const ProductDetail = () => {
   };
 
   const lowestPrice = getLowestPrice();
+
+  
 
   return (
     <div>

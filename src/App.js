@@ -132,6 +132,7 @@ function App() {
             <Route path="/tjanster" element={<Services />} />
             <Route path="/produkter" element={<Products />} />
             <Route path="/produkter/:category" element={<Products />} />
+            
             <Route path="/for-aterforsaljare" element={<Resells />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/kontakt" element={<Contact />} />
