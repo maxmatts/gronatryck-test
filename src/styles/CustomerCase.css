@@ -1,0 +1,46 @@
+.customer-cases-text-containers {
+    display: flex;
+    flex-direction: column; 
+    margin: 2rem 0;
+    align-items: flex-start;
+}
+
+.customer-logo-container {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: start; 
+    align-items: center; 
+    width: 100%;
+}
+
+.customer-logo-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 1rem; 
+}
+
+.customer-logo-image {
+    height: 8rem; 
+    width: auto; 
+    object-fit: contain;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 768px) {
+    .customer-logo-image {
+        height: 60px; 
+    }
+}

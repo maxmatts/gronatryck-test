@@ -1,0 +1,103 @@
+
+
+.input-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); 
+    gap: 1rem; 
+    width: 100%; 
+}
+
+.input-row {
+    display: flex; 
+    gap: 1rem; 
+}
+
+.input-item {
+    flex: 1; 
+}
+
+.input-label {
+    margin-bottom: 0.5rem;
+}
+
+.input-login {
+    width: 100%; 
+    padding: 0.75rem; 
+    border: 1px solid #ccc; 
+    border-radius: 4px; 
+}
+.contact{
+    
+    margin: auto;
+    justify-content: left;
+    align-items: left;
+    text-align: left;
+    width: 50%;
+}
+
+h4 {
+    font-size: var(--fontSizeSM); 
+    font-weight: 500; 
+}
+
+.info-text {
+    font-size: var(--fontSizeXSS); 
+    margin: 1rem 0; 
+}
+
+.checkbox-container {
+    display: flex; 
+    align-items: center; 
+    cursor: pointer; 
+    font-size: var(--fontSizeXS); 
+}
+
+.checkbox-container label {
+    position: relative; 
+    cursor: pointer; 
+}
+
+
+.password-section {
+    grid-column: span 2; 
+    padding: 0;
+    margin: 0;
+   
+}
+
+.login-btn {
+    background-color: var(--primary-green);
+    padding: 1rem 3rem;
+    border-radius: 48px;
+    text-align: center;
+    font-size: var(--fontSizeXS);
+    margin: 0 auto; 
+    margin-top: 4rem;
+    display: block; 
+    color: white;
+    width: 100%;
+}
+
+
+
+
+
+
+@media (min-width: 768px) {
+    .input-grid {
+        grid-template-columns: repeat(2, 1fr); 
+    }
+
+   
+}
+
+
+@media (max-width: 767px) {
+    .input-grid {
+        grid-template-columns: 1fr; 
+    }
+
+    .password-section {
+        grid-column: span 1; 
+    }
+}

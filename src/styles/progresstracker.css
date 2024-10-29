@@ -1,0 +1,62 @@
+.progress-tracker {
+    display: flex;
+    justify-content: space-between;
+    margin: 8rem 0 0 0;
+    padding: 0;
+    list-style-type: none;
+    counter-reset: step;
+    background-color: var(--white-color);
+}
+
+.step {
+    position: relative;
+    text-align: center;
+    flex-grow: 1;
+    padding: 1rem;
+    color: #999; 
+}
+
+.step-link {
+    text-decoration: none;
+    color: inherit; 
+}
+
+.step-number {
+    counter-increment: step;
+    width: 3rem;
+    height: 3rem;
+    line-height: 3rem;
+    border-radius: 50%;
+    background-color: #ccc; 
+    color: white;
+    text-align: center;
+    display: inline-block;
+    margin-bottom: .5rem;
+}
+
+.step-label {
+    display: block;
+    margin-top: .5rem;
+}
+
+.step.active .step-number {
+    background-color: var(--primary-lightgreen); 
+    color: white; 
+}
+
+.step.active .step-label {
+    color: var(--primary-lightgreen); 
+}
+
+.step.completed .step-number {
+    background-color: var(--primary-green); 
+    color: white; 
+}
+
+.step.completed .step-label {
+    color: var(--primary-green);
+}
+
+.step.completed {
+    border-bottom: 2px solid var(--primary-green); 
+}

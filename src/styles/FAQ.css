@@ -1,0 +1,42 @@
+.faq-section {
+    padding: 2rem 0rem;
+    background-color: #f9f9f9; 
+
+   
+  }
+
+  .faq-item h2,  
+  .faq-item p
+  {   
+      text-align: left; 
+  }
+  
+  .section-heading {
+   
+    color: var(--primary-green); 
+  
+  }
+  
+  .faq-item {
+    border-bottom: 1px solid #ddd;
+    padding: 1.5rem 0; 
+  }
+  
+  
+  
+  .faq-item:last-child {
+    border-bottom: none; 
+  }
+  
+.long{
+    max-width: 200ch;
+}
+
+.terms-page{
+ max-width: 1150px;
+ margin: auto;
+ width: 90%;
+ margin-top: 15rem;
+ 
+}
+  

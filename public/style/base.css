@@ -1,0 +1,29 @@
+@import url('./reset.css');
+:root{
+    font-size: 62.5%;
+
+    /*COLOURS*/
+    --primary-color: #6E8A68;
+    --secondary-color: #FCFAEB;
+    --dark-color: #2C2A26;
+
+
+    /*FONTS*/
+    --headingFont: "Lilita One", system-ui;
+    --bodyFont: "Nunito", sans-serif;
+}
+a{
+    text-decoration: none;
+    color: var(--primary-color);
+}
+body{
+    background-color: var(--secondary-color);
+    font-size: 1.6rem;
+    font-family: var(--bodyFont);
+
+}
+.container{
+    max-width: calc(1200px - (1.6rem * 2));
+    margin-inline: auto;
+    padding-inline: 1.6rem;
+}

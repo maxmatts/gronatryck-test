@@ -1,0 +1,106 @@
+.admin-container {
+    background-color: var(--white-color); 
+    padding: 2rem;
+    min-height: 10rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+  
+.tabs {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    border-bottom: 2px solid var(--primary-green);
+}
+  
+.tab {
+    background-color: var(--bright-color);
+   
+    padding: 1rem 2rem;
+    margin: 0.5rem .5rem;
+    cursor: pointer;
+    font-size: var(--fontSizeSM);
+    color: var(--primary-green);
+    border-radius: .6rem;
+    font-weight: 500
+;
+}
+  
+.tab.active {
+    background-color: var(--primary-green); 
+    color: var(--white-color);
+}
+  
+.admin-card {
+    background-color: var(--bright-color);
+    width: 100%;
+    max-width: 40rem;
+    padding: 2rem;
+    margin: 1rem 0rem;
+    border-radius: .6rem;
+    box-shadow: 0rem .4rem .6rem rgba(0, 0, 0, 0.1);    
+}
+  
+.admin-card h3 .percentage {
+    font-size: var(--fontSizeSM);
+    color: var(--primary-dark);
+    margin-bottom: 1rem;
+    font-family: var(--bodyFont);
+}
+  
+.data {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+  
+.number {
+    font-size: var(--fontSizeLG);
+    font-family: var(--bodyFont);
+    font-weight: 500;
+}
+  
+
+  
+.notes-card ul {
+    color: black;
+    font-weight: 400;
+    font-size: var(--fontSizeXS);
+}
+
+.logout-btn {
+     margin-top: 4rem;
+}
+
+
+
+@media (min-width:1005px)
+{
+    .admin-container{
+        width: 80%;
+        margin: auto;
+    }
+    .admin-card-container{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 2rem;
+        
+
+    }
+
+ 
+      
+    .tab {
+        
+       
+        padding: 1.5rem 4rem;
+     
+       
+    }
+
+    .admin-card{
+        height: 20rem;
+        margin: 0;
+    }
+}

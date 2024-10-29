@@ -1,0 +1,99 @@
+.page-header {
+  container-type: inline-size;
+  container-name: header;
+  padding-block: 1.6rem;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 150;
+  background-color: var(--white-color);
+  box-shadow: 0px 2px 8px 0px rgba(55, 58, 33, 0.25);
+  color: var(--primary-green);
+  .top-bar {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+  }
+}
+
+.header-container {
+  width: 90%;
+  margin: auto;
+}
+
+.mobile-menu-2 {
+  display: block;
+  position: absolute;
+  top: 100%;
+  right: -100%;
+  width: 100%;
+  height: calc(100vh - 100%);
+  background: var(--white-color);
+  transition: right 200ms ease;
+  &.active {
+    right: 0;
+  }
+}
+
+
+
+
+
+/* HAMBURGER */
+
+.hamburger--line {
+  display: block;
+  width: 2.4rem;
+  height: 3px;
+  background-color: var(--primary-green);
+  margin: 5px 0;
+  transition: all 0.3s ease;
+}
+.hamburger[aria-expanded="true"] .hamburger--line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+}
+
+.hamburger[aria-expanded="true"] .hamburger--line:nth-child(2) {
+  opacity: 0;
+}
+
+.hamburger[aria-expanded="true"] .hamburger--line:nth-child(3) {
+  transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.icon-button svg {
+  width: 2.4rem;
+  height: 2.4rem;
+  color: var(--primary-color);
+}
+
+.logo {
+  max-width: 12.5rem;
+}
+
+@container header (min-width: 1005px) {
+  .desktop {
+    width: 100%;
+    display: flex !important;
+    line-height: 1;
+    a {
+      font-size: 1.5rem;
+    }
+  }
+  .mobile-menu-2 {
+    display: none;
+  }
+  .hamburger {
+    display: none;
+  }
+
+  .header-container {
+    width: 90%;
+  }
+}
+
+@media (min-width: 1500px) {
+  .header-container {
+    width: 75%;
+  }
+}

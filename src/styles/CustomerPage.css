@@ -1,0 +1,68 @@
+.Dashboard {
+  width: 90%;
+  margin: auto;
+  margin-bottom: 5rem;
+
+  justify-content: center;
+  align-items: center;
+}
+
+.options-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  max-width: 600px;
+  margin: auto;
+}
+
+.options-list li {
+  background-color: var(--white-color);
+  color: var(--primary-green);
+  padding: 1.5rem;
+  margin: 1rem 0;
+  text-align: left;
+  border-bottom: 1px solid var(--primary-lightgreen);
+  cursor: pointer;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.order-history {
+  margin-top: 2rem;
+  padding: 1rem;
+}
+
+.order-history h2 {
+  font-size: 1.5rem;
+}
+
+.order-item {
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 1rem;
+  margin-bottom: 1rem;
+}
+
+.order-item h3 {
+  margin: 0;
+}
+
+.order-item ul {
+  padding-left: 1rem;
+}
+
+.order-item li {
+  list-style: none;
+}
+
+@media (min-width: 768px) {
+  .Dashboard {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1005px) {
+  .Dashboard {
+    width: 70%;
+  }
+}

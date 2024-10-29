@@ -1,0 +1,36 @@
+/* Breadcrumb.css */
+.breadcrumb-wrapper{
+    margin: 10rem 0 1rem 0;
+    position: relative;
+   
+}
+
+.product-wrapper .breadcrumb-wrapper{
+margin: 0rem;
+}
+  
+  .breadcrumb {
+    display: flex;
+    align-items: center;
+    font-size: var(--fontSizeXS);  
+    color: #333;  
+   
+    margin: auto;
+    text-align: left;
+  }
+  
+  .breadcrumb a {
+    text-decoration: none;
+    color: var(--primare-green); 
+    transition: color 0.3s;  
+  }
+  
+  .breadcrumb a:hover {
+    text-decoration: underline;  
+    color: var(--primare-dark);  
+  }
+  
+  .breadcrumb-separator {
+    margin: 0 5px; 
+  }
+  

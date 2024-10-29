@@ -1,0 +1,206 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.stanley-container {
+    width: 100%;
+    margin: auto;
+}
+
+.stanley {
+    display: flex; 
+    flex-direction: column; 
+    align-items: center; 
+    justify-content: center; 
+    width: 90%;
+    max-width: 1200px; 
+    margin: auto; 
+}
+
+.stanley-text-container {
+    display: flex; 
+    flex-direction: column; 
+    width: 100%; 
+    margin: auto;
+    margin-top: 2rem;
+}
+
+.text-container {
+    flex: 1; 
+    display: flex; 
+    flex-direction: column; 
+    justify-content: flex-start; 
+    margin-right: 2rem; 
+}
+
+.text-container h1 {
+    margin-bottom: 1rem;
+}
+
+.text-container p {
+    margin: 1rem 0;
+    flex-grow: 1; 
+}
+
+.img-container {
+    flex: 1; 
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    margin-top: 1rem; 
+    gap: 1rem; 
+}
+
+.stanley-img {
+    width: 100%; 
+    height: auto; 
+    max-height: 100%;
+    object-fit: cover; 
+    border-radius: 6px; 
+}
+
+.carousel-container {
+    position: relative;
+    width: 100%;
+}
+
+.image-carousel {
+    display: flex;
+    overflow-x: auto; 
+    scroll-snap-type: x mandatory;
+    gap: 0.5rem; 
+    padding: 1rem; 
+    scrollbar-width: none; 
+    -ms-overflow-style: none; 
+    background-color: #f8f8f8; 
+    border-radius: 6px; 
+}
+
+.image-carousel::-webkit-scrollbar {
+    display: none; 
+}
+
+.image-carousel img {
+    width: 15rem; 
+    height: auto; 
+    border-radius: 6px; 
+    object-fit: cover; 
+    scroll-snap-align: start;
+    transition: transform 0.2s; 
+}
+
+
+.carousel-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    border: none;
+    color: white;
+    font-size: 3rem;
+    padding: 0.5rem;
+    cursor: pointer;
+    z-index: 2;
+    border-radius: 50%;
+}
+
+.carousel-arrow.left {
+    left: 1rem;
+}
+
+.carousel-arrow.right {
+    right: 1rem;
+}
+
+.benefits-list {
+    display: flex; 
+    flex-direction: column; 
+    margin: 1rem 0;
+    align-items: center; 
+}
+
+.benefit-item {
+    margin: 0.5rem 0; 
+}
+
+.stanley-heading {
+    display: flex; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    margin: 2rem 0; 
+}
+
+.stanley-heading .subheading-1 {
+    font-size: 2rem; 
+    font-weight: bold; 
+}
+
+@media (min-width: 768px) {
+    .stanley {
+        width: 80%;
+    }
+
+    .stanley-text-container {
+        flex-direction: row; 
+        align-items: flex-start; 
+    }
+
+    .text-container {
+        flex: 1; 
+        margin-right: 2rem; 
+    }
+
+    .img-container {
+        flex: 1; 
+    }
+
+    .image-carousel img {
+        width: 30rem; 
+    }
+
+    .benefits-list {
+        flex-direction: row; 
+        justify-content: space-around; 
+        width: 100%; 
+    }
+}
+
+@media (min-width: 1005px) {
+    .stanley {
+        width: 70%;
+    }
+
+    .stanley-text-container {
+        margin: 5rem 0;
+    }
+
+    .text-container {
+        display: flex; 
+        flex-direction: column; 
+        justify-content: flex-start; 
+    }
+
+    .img-container {
+        display: flex;
+        justify-content: center;
+        align-items: stretch; 
+        margin: 0 2rem 0 0;
+    }
+
+    .stanley-img {
+        width: 100%; 
+        height: 100%; 
+        object-fit: cover;
+        border-radius: 6px; 
+    }
+
+    .image-carousel img {
+        width: 30rem; 
+    }
+
+    .benefits-list {
+        flex-direction: row; 
+        justify-content: space-around; 
+        width: 100%;
+    }
+}
