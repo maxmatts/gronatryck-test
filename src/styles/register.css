@@ -50,6 +50,7 @@ h4 {
     align-items: center; 
     cursor: pointer; 
     font-size: var(--fontSizeXS); 
+    margin-top: 1rem;
 }
 
 .checkbox-container label {

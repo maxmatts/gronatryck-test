@@ -3,30 +3,31 @@ import "../styles/home.css";
 import Button from "../components/Button";
 import Hero from "../components/Hero";
 import PopularCategories from "../components/PopularCategories";
+import "../styles/Categories.css";
 
 const Home = () => {
   const categorylist = [
     {
-      to: "/produkter", 
-      img: "/img/cover/Stanley_Stella_AW24_Timeless_Outerwear_Mix_01.jpg",
+      to: "/produkter",
+      img: "/img/decorative/gronatryck_group_img.png",
       alt: "Cool tröja",
       label: "Profilkläder",
     },
     {
       to: "/tjanster",
-      img: "/img/decorative/emarts-emarts-ZCTh4f4mv18-unsplash.jpg",
+      img: "/img/decorative/gronatryck_print_img.png",
       alt: "Västar",
       label: "Tjänster",
     },
     {
       to: "/kundcase",
-      img: "/img/decorative/matthew-moloney-mKtfd1SOYDc-unsplash.jpg",
+      img: "/img/decorative/gronatryck_clientcase_tshirt_img.png",
       alt: "Pike",
       label: "Kundberättelser",
     },
     {
       to: "/produkter",
-      img: "/img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg",
+      img: "/img/decorative/gronatryck_fence_img.png",
       alt: "Tröjor",
       label: "Nyheter",
     },
@@ -37,21 +38,17 @@ const Home = () => {
       <Hero />
       <div className="body-container">
         <div>
-          <PopularCategories categoryList={categorylist} />
+          <PopularCategories grid={true} categoryList={categorylist} />
         </div>
 
         <section className="certified-section">
-          <h1 className="section-heading heading-3">Vår drivkraft</h1>
           <div className="certified-content">
             <div className="certified-text">
-              <div className="eco-label">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">Miljö</h5>
-                </div>
-              </div>
+              <h2 className="section-heading heading-3">Vår drivkraft</h2>
+              <div className="eco-label"></div>
 
               <div className="eco-text-container">
-                <p className="main-body">
+                <p className="main-body margin">
                   Vår passion för miljön och rättvisa genomsyrar allt vi gör –
                   från att erbjuda hållbara och rättvisemärkta textilier till
                   att säkerställa att våra kunder får genomtänkta och hållbara
@@ -64,26 +61,26 @@ const Home = () => {
                   och hållbart val som både du och dina medarbetare kan bära med
                   stolthet, varje dag.
                 </p>
+                <Button
+                  to="/om-grona-tryck"
+                  className=" main-btn btn-container"
+                  content="Läs mer"
+                />
               </div>
             </div>
+
             <div className="certified-image half-img">
               <img
-                src="/img/decorative/new-balance-brick-wood-57-40-2.jpg"
-                alt="Person wearing sustainable clothing"
+                src="/img/decorative/gronatryck_jacket_img.png"
+                alt="en man med ryggen vänd iklädd en stilig beigefärgad jacka"
               />
             </div>
           </div>
-
-          <Button
-            to="/om-grona-tryck"
-            className=" main-btn btn-container"
-            content="Läs mer"
-          />
         </section>
 
         {/* Section 5: Beställningsprocess */}
         <section className="order-process">
-          <h1 className="section-heading heading-3">Beställningsprocess</h1>
+          <h2 className="section-heading heading-3">Beställningsprocess</h2>
           <div className="process-steps main-body">
             {[
               {
@@ -127,58 +124,61 @@ const Home = () => {
           </p>
         </section>
 
-        {/* Section 6: Testimonial */}
         <section className="testimonial-section">
-          <h1 className="section-heading heading-3">
-            Peter väljer rättvisemärkta kläder för sina fans
-          </h1>
-
           <div className="testimonial-label">
-            <div className="label-with-bg ">
-              <span className="eco">★ ★ ★</span>
-            </div>
+            {/* Optional label section can go here */}
           </div>
 
           <div className="testimonial-content">
             <blockquote className="testimonial-quote">
-              <p className="main-body">
-                “Jag vill att min merch speglar mina värderingar, och tack vare
-                Gröna Tryck kunde jag erbjuda mina fans produkter jag verkligen
-                står bakom,” säger Peter.
-              </p>
-              <br></br>
-              <p className="main-body">
-                “Det var också otroligt smidigt att beställa i bulk och få allt
-                levererat snabbt, samtidigt som jag vet att produkterna är
-                certifierade och miljövänliga.”
-              </p>
-              <div className="btn-container">
-                <Button
-                  to="/kundcase"
-                  className=" main-btn btn-container"
-                  content="Se mer om våra arbeten"
-                />
+              <h2 className="section-heading heading-3">
+                Peter väljer rättvisemärkta kläder för sina fans
+              </h2>
+
+              <div className="testimonial-content">
+                <div className="testimonial-image">
+                  <img
+                    src="/img/decorative/gronatryck_jeanjacket_img.png"
+                    alt="en man med ryggen vänd iklädd en stilig jeans jacka"
+                  />
+                </div>
+
+                <div className="testimonial-text-container">
+                  {" "}
+                  {/* Added this div for styling */}
+                  <p className="main-body testimonial-text">
+                    “Jag vill att min merch speglar mina värderingar, och tack
+                    vare Gröna Tryck kunde jag erbjuda mina fans produkter jag
+                    verkligen står bakom,” säger Peter.
+                  </p>
+                  <p className="main-body testimonial-text">
+                    “Det var också otroligt smidigt att beställa i bulk och få
+                    allt levererat snabbt, samtidigt som jag vet att produkterna
+                    är certifierade och miljövänliga.”
+                  </p>
+                  <div className="">
+                    <Button
+                      to="/kundcase"
+                      className="main-btn btn-container"
+                      content="Se mer om våra arbeten"
+                    />
+                  </div>
+                </div>
               </div>
             </blockquote>
-            <div className="testimonial-image">
-              <img
-                src="/img/decorative/vidar-nordli-mathisen-qusExK3sba8-unsplash.jpg"
-                alt="Petter"
-              />
-            </div>
           </div>
         </section>
 
-        <section className="sustainability-section">
+        {/* <section className="sustainability-section">
           <div className="sustainability-container">
             <h1 className="section-heading subheading-1">Tryck med omtanke</h1>
             <p className="main-body">– hållbarhet i varje detalj.</p>
           </div>
-        </section>
+        </section> */}
 
         {/* Section 7: Membership Registration */}
         <section className="membership-section">
-          <div className="brush-background"></div> 
+          <div className="brush-background"></div>
           <form className="membership-form">
             <p className="membership-subheading main-body">
               Var först med att ta del av våra nyheter och härliga erbjudanden.

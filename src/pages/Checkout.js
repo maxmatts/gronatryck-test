@@ -63,7 +63,7 @@ function Checkout() {
                 className='input-login'
                 type="text"
                 name="personName"
-                value={customerInfo.personName}
+                value={`${customerInfo.firstName} ${customerInfo.lastName}`}
                 onChange={handleChange}
                 placeholder="För & Efternamn"
                 required
@@ -71,7 +71,7 @@ function Checkout() {
             </div>
 
             <div className="input-container">
-              <h6 className='input-label'>Företagsnamn</h6>
+              <h6 className='input-label'>Företagsnamn:</h6>
               <input
                 className='input-login'
                 type="text"
@@ -83,7 +83,7 @@ function Checkout() {
             </div>
 
             <div className="input-container">
-              <h6 className='input-label'>Adress</h6>
+              <h6 className='input-label'>Adress:</h6>
               <input
                 className='input-login'
                 type="text"
@@ -95,7 +95,7 @@ function Checkout() {
             </div>
 
             <div className="input-container">
-              <h6 className='input-label'>Telefon</h6>
+              <h6 className='input-label'>Telefon:</h6>
               <input
                 className='input-login'
                 type="text"
@@ -107,7 +107,7 @@ function Checkout() {
             </div>
 
             <div className="input-container">
-              <h6 className='input-label'>E-post</h6>
+              <h6 className='input-label'>E-post:</h6>
               <input
                 className='input-login'
                 type="email"
@@ -120,7 +120,7 @@ function Checkout() {
             </div>
 
             <div className="input-container">
-              <h6 className='input-label'>Organisationsnummer</h6>
+              <h6 className='input-label'>Organisationsnummer:</h6>
               <input
                 className='input-login'
                 type="text"

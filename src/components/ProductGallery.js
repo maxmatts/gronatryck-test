@@ -57,13 +57,11 @@ export default function ProductGallery({ images }) {
           <source
             srcSet={`${mainImage.path}-small.webp 600w, ${mainImage.path}-medium.webp 1024w, ${mainImage.path}.webp 1600w`}
             type="image/webp"
-            sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
           />
           {/* JPEG-källa för huvudbilden */}
           <source
             srcSet={`${mainImage.path}-small.jpg 600w, ${mainImage.path}-medium.jpg 1024w, ${mainImage.path}.jpg 1600w`}
             type="image/jpeg" // Här borde det vara 'image/jpeg' istället för 'image/webp'
-            sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
           />
           {/* Fallback-bild */}
           <img

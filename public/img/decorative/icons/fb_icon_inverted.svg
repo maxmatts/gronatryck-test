@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 135.525 135.525">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+        stroke-width: 5px;
+        stroke: #606f4a;
+      }
+
+      .cls-2 {
+        fill: #606f4a;
+        stroke-width: 2px;
+      }
+    </style>
+  </defs>
+    <g id="fb_icon_inverted">
+      <rect id="frame" class="cls-1" x="2.5" y="2.5" width="130.525" height="130.525" rx="12" ry="12"/>
+      <path id="f" class="cls-2" d="m56.954,133.486h21.285v-51.511h14.816l4.695-18.251-20.398-.233v-7.858c0-2.686,2.178-4.864,4.864-4.864h15.534v-20.299l-24.692.051c-1.643.003-5.417-.241-8.933,1.906,0,0-6.712,3.751-7.17,14.312,0,0,0,16.841,0,16.841h-14.486l-.197,18.396h14.781l-.099,51.511Z"/>
+    </g>
+</svg>

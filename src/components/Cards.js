@@ -29,17 +29,15 @@ function Card({
           {/* Standardbild för produkten */}
           <picture className="default-image">
             <source
-              srcSet={`${path}-small.webp 600w, ${path}-medium.webp 1024w, ${path}.webp 1600w`}
+              srcSet={`${path}-small.webp 600w, ${path}-medium.webp 1024w`}
               type="image/webp"
-              sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
             />
             <source
-              srcSet={`${path}-small.jpg 600w, ${path}-medium.jpg 1024w, ${path}.jpg 1600w`}
+              srcSet={`${path}-small.jpg 600w, ${path}-medium.jpg 1024w`}
               type="image/jpeg"
-              sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
             />
             <img
-              src={`${path}.jpg`} // Fallback-bild om inget annat kan laddas
+              src={`${path}-medium.jpg`} // Fallback-bild om inget annat kan laddas
               alt={modelImage.alt} // Beskrivande text för bilden
               loading="lazy" // Låt bilden laddas senare för att förbättra prestanda
             />
@@ -47,17 +45,15 @@ function Card({
           {/* Hoverbild för produkten */}
           <picture className="hover-image">
             <source
-              srcSet={`${variantPath}-small.jpg 600w, ${variantPath}-medium.webp 1024w, ${variantPath}.webp 1600w`}
+              srcSet={`${variantPath}-small.jpg 600w, ${variantPath}-medium.webp 1024w`}
               type="image/webp"
-              sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
             />
             <source
-              srcSet={`${variantPath}-small.jpg 600w, ${variantPath}-medium.jpg 1024w, ${variantPath}.jpg 1600w`}
+              srcSet={`${variantPath}-small.jpg 600w, ${variantPath}-medium.jpg 1024w`}
               type="image/jpeg"
-              sizes="(max-width: 600px) 600px, (max-width: 1024px) 1024px, 1600px"
             />
             <img
-              src={`${path}.jpg`} // Fallback-bild
+              src={`${path}-medium.jpg`} // Fallback-bild
               alt={name} // Beskrivande text för hoverbilden
               loading="lazy"
             />
@@ -102,4 +98,3 @@ function Card({
 }
 
 export default Card;
-

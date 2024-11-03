@@ -6,6 +6,7 @@ const Login = ({ onLogin }) => {
   const [user, setUser] = useState({ email: '', password: '' });
   const navigate = useNavigate();
   const location = useLocation();
+  const [error, setError] = useState('');
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -16,6 +17,7 @@ const Login = ({ onLogin }) => {
     const loggedInUser = onLogin(user); // Call the prop function to log in
 
     if (loggedInUser) {
+      setError('');
       // Store logged in user in localStorage
       localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
@@ -28,17 +30,17 @@ const Login = ({ onLogin }) => {
         navigate(from);
       }
     } else {
-      alert("Login failed");
+      setError("Fel email eller lösenord. Försök igen.");
     }
   };
 
   return (
     <div>
-      <div className="cart-heading">
-        <h1 className='heading-3 header-label'>Mina sidor</h1>
-      </div>
+     <div className="cart-heading">
+            <h1 className="main-heading page-heading">Logga in</h1>
+          </div>
       <div className='login-container'>
-        <h3 className='subheading-1'>Logga in</h3>
+        {error && <p className='error-message'>{error}</p>}
         <form>
           <div className="input-container">
             <h6 className='input-label'>Email eller kundnummer</h6>
@@ -67,6 +69,8 @@ const Login = ({ onLogin }) => {
               required
             />
           </div>
+
+          
 
           <p className='login-link' onClick={() => navigate('/reset-password')}>
             Glömt lösenord?

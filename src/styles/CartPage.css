@@ -39,9 +39,14 @@
 }
 
 .cart-item-image {
-  width: 35%;
+  width: 25%;
   height: auto;
   margin-right: 1rem;
+  max-width: 35rem;
+}
+
+.cart-item-image img{
+  max-width: 15rem;
 }
 
 .cart-item-details {
@@ -212,6 +217,8 @@
     flex-basis: 25%;
     padding: 0;
     margin-top: 0;
+
+    
   }
 
   .print-container .heading-3 {
@@ -222,6 +229,10 @@
     font-size: 1.4rem;
     line-height: 1.5rem;
     margin-bottom: 1rem;
+  }
+
+  .print-price .main-body{
+    margin-bottom: 0rem;
   }
 
   .print-container label,
@@ -242,6 +253,17 @@
   .print-container textarea {
     height: 8rem;
   }
+
+  
+
+
+
+
+
+
+
+
+
 }
 
 @media (min-width: 1200px) {

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 133.637 133.637">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: none;
+        stroke: #606f4a;
+        stroke-width: 5px;
+      }
+    </style>
+  </defs>
+    <g id="li_icon">
+      <g>
+        <rect class="cls-1" x="19.636" y="48.367" width="19.452" height="66.576"/>
+        <circle class="cls-1" cx="29.362" cy="28.962" r="10.268"/>
+        <path class="cls-1" d="m72.143,48.367l.158,5.509s7.767-9.018,26.178-4.988c8.785,1.923,16.064,9.66,16.064,18.21v46.796h-17.436l-.227-39.528c-.06-10.42-15.581-12.824-21.129-5.531-.842,1.107-1.445,3.212-1.445,4.603,0,8.081,0,40.457,0,40.457h-18.778l.179-66.527h16.437Z"/>
+      </g>
+      <rect id="frame" class="cls-1" x="2.5" y="2.5" width="128.637" height="128.637" rx="14" ry="14"/>
+    </g>
+</svg>

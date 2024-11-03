@@ -1,72 +1,98 @@
-/* Frontend mobil och desktop
+// Frontend mobil och desktop
 
-klart för:
-
-
-
-Produtkdetaljer
-Hela Beställningsprocessen
-Logga in
-Registrera
-Glömt lösenord
-Navbar 
-
-
-
-
-
-BEHÖVER GODKÄNNAS:
-OM oss
-Kontakta oss. 
-Återförsäljare. 
-Admin
-Produktsidan för större skärm
-Stanley
+ATT GODKÄNNA!!!!!
 FAQ
-Kundcase
-Kontakt
-Home
-Hållbarhetssidan
 
+Linje under navlinks vid hover
+Footer
+Sociala medier länkar!
+Ikoner från mobil till desktop, samt bold i desktop men inte mobil
+Kontakt lite ihoptryck i mobil
 
+Kontakta oss
+Kika struktur
+Ta bort underrubrik vid kontaktformulär eller lägg ovanför
+kika över text
+Kika över meddelandet nör man skickar ett kontaktformulär
+byta plats på formuläret
+Hero texten måste bli läsbar
+Lägg till slogan vid header istället för "Hållbart tryck, Rättvis Framtid"?
+mindre height på videon
+kika knapp på heron
+kontakt-sidan vid bredd mellan 0 och 767 pixlar (Kanske kikar på)
 
+Chat
+Grön färg istället för blå
+Tidpunkt
+kanske vem som skrev, profil
 
+Ta bort brush på grejer som inte är säsongsbaserat, tex mina sidor osv
 
+"Beställningsprocess"
+under rubrik
+Spacing mellan rubrik och cirklar
 
+ta bort slogan
 
+Offertförfrågan
 
+hämta för och efternamn till informationen
+Kika över priserna för offertfrågan
+Hämtas inte rätt priser om det inte är under 10 st i checkout
+Använda komma istället för punkt i alla priser
+
+Stanley
+max width
+samt läsbarhet
+Ta bort Varför Stanley Stella
+
+Andra arbeten har brutna länkar inom kundberättelser
+
+Logga in. lösenord
+ta bort begränsing
+
+navbar bredd vid 1005-1085 pixlar Tajt
+
+Se filtret på produktsidan (klicka utanför så ska collapse gå ihop)
+
+"Produkter"
+Återställ knappen lite skev
+
+Cards spacing, kanske lite skev
+
+Ladda in en lista med alla ordrar i admin panel
+
+Ändra dina uppgifter måste kunnas göra
+
+"Vår drivkraft"
+Newbalance bilden måste bytas ut
+Kanske göra bilden större vid större skärmar
+Miljö kan tas bort
+Lägga knappen under textcontainer
+Kika spacing
+
+Flytta priser under tryck och lägga en sticky
+
+Ta bort alla alerts
+
+ifyllda ikoner vid hover och klick, navbar
+Gap mellan ikonerna
+Populära kategorier ser skect ut i olika skärmstorlekar. Sortiment -> kläder
+
+"Kassa"
+
+Mindre bilder
+
+"Produktdetail"
+"MAx kikar på detta"
+Carousel på alt bilder
+
+lägg in btns eler länkar i divar till iconerna på nav
 
 Att GÖRA!!!!
 
-Se filtret på produktsidan
-navbar bredd vid 1007 pixlar
-byta icons in navbar
-kontakt-sidan vid bredd mellan 0 och 767 pixlar 
+Breadcrumps, kategory till produktnamn
 
+Samma spacing på allt
 
-
-
-
-
-FOOTER
-
-Kika över copy på allt
-
-
-
-
-
-
-
-
-
-
-LÄS mer i stanley scrollar inte
-
-
-
-
-
-
-
-
+ta bort nollan i storleksinput

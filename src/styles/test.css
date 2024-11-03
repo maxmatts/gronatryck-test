@@ -1,0 +1,7 @@
+.grid-test {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+}
+.bg-red {
+  background-color: red;
+}

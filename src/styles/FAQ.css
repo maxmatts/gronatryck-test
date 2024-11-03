@@ -1,7 +1,7 @@
 .faq-section {
     padding: 2rem 0rem;
     background-color: #f9f9f9; 
-
+    cursor: pointer;
    
   }
 
@@ -23,14 +23,9 @@
   }
   
   
+
   
-  .faq-item:last-child {
-    border-bottom: none; 
-  }
-  
-.long{
-    max-width: 200ch;
-}
+
 
 .terms-page{
  max-width: 1150px;
@@ -39,4 +34,6 @@
  margin-top: 15rem;
  
 }
+
+
   

@@ -15,7 +15,7 @@ const Stanley = () => {
     <div>
       <section className="hero-section-2">
         <img
-          src="/img/cover/Stanley_Stella_AW24_Timeless_Outerwear_Mix_01.jpg"
+          src="/img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_fullhd.jpg"
           alt="Hero"
           className="hero-image"
           id="aboutus-hero-image"
@@ -102,35 +102,35 @@ const Stanley = () => {
 
               <div className="image-carousel">
                 <img
-                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0-small.jpg"
                   alt="Product 1"
                 />
                 <img
-                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0-small.jpg"
                   alt="Product 2"
                 />
                 <img
-                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0-small.jpg"
                   alt="Product 3"
                 />
                 <img
-                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0-small.jpg"
                   alt="Product 4"
                 />
                 <img
-                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Connector 2.0_French Navy_Duo_Front_Main_0-small.jpg"
                   alt="Product 1"
                 />
                 <img
-                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Liner_Desert Dust_Duo_Front_Main_0-small.jpg"
                   alt="Product 2"
                 />
                 <img
-                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Radder 2.0 Vintage_G. Dyed Blue Stone_Duo_Front_Main_0-small.jpg"
                   alt="Product 3"
                 />
                 <img
-                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0.jpg"
+                  src="/img/informative/Puffer Gilet_French Navy_Duo_Front_Main_0-small.jpg"
                   alt="Product 4"
                 />
               </div>
@@ -141,28 +141,6 @@ const Stanley = () => {
               >
                 &gt;
               </button>
-            </div>
-          </section>
-
-          <section className="benefits-section stanley-container">
-            <h1 className="section-heading heading-3 stanley-heading">
-              Varför Välja Stanley/Stella?
-            </h1>
-            <div className="benefits-list">
-              <div className="benefit-item">
-                <h3 className="subheading-2">Miljövänliga Material</h3>
-                <p className="main-body">Hållbara och ekologiska tyger.</p>
-              </div>
-              <div className="benefit-item">
-                <h3 className="subheading-2">Customisering</h3>
-                <p className="main-body">Egen design och tryck.</p>
-              </div>
-              <div className="benefit-item">
-                <h3 className="subheading-2">Rättvisa Arbetsvillkor</h3>
-                <p className="main-body">
-                  Produktion under Fairwear-principer.
-                </p>
-              </div>
             </div>
           </section>
         </div>

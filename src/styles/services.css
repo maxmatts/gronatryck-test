@@ -1,48 +1,47 @@
-General Styles
-
-
-.container {
-    width: 90%;
-  }
-  
-  .service-grid {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-  
- 
-  .service-detail{
-    height: 100vh;
-  }
- 
-  .service-name {
-    font-size: var(--fontSizeLG);
-    font-family: var(--headingFont);
-    margin: 1.5rem 0;
-  }
-  
-  .service-description {
-    font-size: var(--fontSizeXS);
-    font-family: var(--bodyFont);
-    margin-bottom: 2rem;
-  }
-  
-  .button-container {
-    display: flex;
-    justify-content: center;
-    margin: 2rem 0;
-  }
-
-  .service-info h2{
-    text-align: left;
-    margin: 2rem 0;
+General Styles .container {
+  width: 90%;
 }
-.service-gallery{
-    width: 100%;
-   
+
+.service-grid {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
-.thumbnail-carousel-2{
+
+.service-detail {
+  height: 100vh;
+}
+
+.service-name {
+  font-size: var(--fontSizeLG);
+  font-family: var(--headingFont);
+  margin: 1.5rem 0;
+}
+
+.service-description {
+  font-size: var(--fontSizeXS);
+  font-family: var(--bodyFont);
+  margin-bottom: 2rem;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin: 2rem 0;
+}
+
+.service-info h2 {
+  text-align: left;
+  margin: 2rem 0;
+}
+.service-gallery {
+  width: 100%;
+}
+
+.main-image-2 img {
+  border-radius: 6px;
+}
+.thumbnail-carousel-2 {
   overflow-x: auto;
   white-space: nowrap;
   scrollbar-width: none;
@@ -51,56 +50,49 @@ General Styles
 }
 
 .thumbnail-image-2 {
-    width: 18rem;
-    height: auto;
-    cursor: pointer;
-    margin: 1rem 0;
-    transition: transform 0.3s;
-    border-radius: 6px;
+  width: 18rem;
+  height: auto;
+  cursor: pointer;
+  margin: 1rem 0;
+  transition: transform 0.3s;
+  border-radius: 6px;
+}
+
+.heading-margin {
+  margin-top: 15rem;
+}
+
+@media (min-width: 768px) {
+  .container {
+    width: 80%;
+  }
+}
+
+@media (min-width: 1005px) {
+  .container {
+    width: 70%;
+    margin: auto;
+    line-height: 1.2;
   }
 
- 
-  .heading-margin{
-    margin-top: 15rem;
+  .thumbnail-carousel-2 {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
   }
 
-  
-
-  @media (min-width: 768px) {
-    .container {
-      width: 80%;
-    }
-    
+  .service-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    align-items: start;
   }
-  
-  @media (min-width: 1005px) {
-    .container {
-      width: 70%;
-      margin: auto;
-      line-height: 1.2;
-    }
 
-    .thumbnail-carousel-2{
-      display: grid;
-      grid-template-columns: repeat(4, 1fr);
-      gap: 1rem;
-    }
-  
-    .service-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr; 
-      gap: 2rem;
-      align-items: start; 
-    }
-  
-    .main-image {
-      grid-area: 1 / 1 / 2 / 2; 
-    }
-  
-    .service-info {
-      grid-area: 1 / 2 / 2 / 3; 
-    }
+  .main-image {
+    grid-area: 1 / 1 / 2 / 2;
   }
-  
 
-  
+  .service-info {
+    grid-area: 1 / 2 / 2 / 3;
+  }
+}

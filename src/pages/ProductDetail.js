@@ -270,9 +270,9 @@ const ProductDetail = () => {
               <p>
                 Antal: <span>{totalQuantity}</span>
               </p>
-              <p>Pris per styck {pricePerItem} SEK</p>
+              <p>Pris per styck {pricePerItem},00 SEK</p>
               <p>
-                Totalt pris: <span>{totalPrice.toFixed(2)} SEK</span>
+                Totalt pris: <span>{totalPrice},00 SEK</span>
               </p>
               <div className="button-container">
                 <button onClick={handleAddToCart} className="main-btn">

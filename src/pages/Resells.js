@@ -7,7 +7,7 @@ const services = () => {
     <div>
       <div className="resell-page">
         <div className="cart-heading">
-          <h1 className="heading-3 header-label">Återförsäljare</h1>
+          <h1 className="main-heading">Återförsäljare</h1>
         </div>
 
         <div className="resell-page-container">
@@ -34,26 +34,24 @@ const services = () => {
             </p>
 
             <div className="btn-container">
-          <div style={{ display: "flex", gap: "1.6rem" }}>
-            <Button
-              to="/kontakt"
-              content={"Kontakta oss"}
-              className="main-btn"
-            />
+              <div style={{ display: "flex", gap: "1.6rem" }}>
+                <Button
+                  to="/kontakt"
+                  content={"Kontakta oss"}
+                  className="main-btn"
+                />
+              </div>
+            </div>
           </div>
-        </div>
-          </div>
-          
+
           <div className="resell-image-container">
             <img
               className="resell-image"
-              src="./img/decorative/new-balance-brick-wood-57-40-2.jpg"
-              alt="Product Image"
+              src="/img/decorative/gronatryck_jacket_img.png"
+              alt="en man med ryggen vänd iklädd en stilig beigefärgad jacka"
             />
           </div>
-          
         </div>
-        
       </div>
     </div>
   );

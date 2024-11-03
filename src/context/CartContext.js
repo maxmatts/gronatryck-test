@@ -34,7 +34,11 @@ export const CartProvider = ({ children }) => {
         setCartItems(prevItems => 
             prevItems.map(item => 
                 item.productId === productId && item.selectedColor === selectedColor && item.size === size
-                    ? { ...item, totalQuantity: quantity, totalPrice: (item.pricePerItem * quantity).toFixed(2) }
+                    ? { 
+                        ...item, 
+                        totalQuantity: quantity, 
+                        totalPrice: (item.pricePerItem * quantity).toFixed(2) // Recalculate total price
+                    }
                     : item
             )
         );
@@ -54,13 +58,18 @@ export const CartProvider = ({ children }) => {
             item.selectedColor === product.selectedColor &&
             item.size === product.size
         );
-
+    
         if (existingProduct) {
-            // Om produkten redan finns, uppdatera kvantiteten
+           
             updateCartItem(product.productId, product.selectedColor, product.size, existingProduct.totalQuantity + product.totalQuantity);
         } else {
-            // Annars lägg till produkten i kundvagnen
-            setCartItems(prevItems => [...prevItems, product]);
+            
+            const updatedProduct = {
+                ...product, 
+                totalPrice: (product.pricePerItem * product.totalQuantity).toFixed(2) 
+            };
+            
+            setCartItems(prevItems => [...prevItems, updatedProduct]);
         }
     };
 

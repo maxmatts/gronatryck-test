@@ -1,18 +1,23 @@
 .Dashboard {
-  width: 90%;
-  margin: auto;
-  margin-bottom: 5rem;
-
-  justify-content: center;
+  width: 90%; 
+  max-width: 130rem; 
+  margin: 0 auto;
+  padding: 2rem; 
+  display: flex; 
+  flex-direction: column; 
   align-items: center;
+  justify-content: center; 
+  margin-bottom: 5rem; 
 }
-
 .options-list {
   list-style: none;
   padding: 0;
-  width: 100%;
-  max-width: 600px;
-  margin: auto;
+  width: 100%; 
+  max-width: 100%; 
+  margin: 0; 
+  display: flex; 
+  flex-direction: column; 
+  align-items: center; 
 }
 
 .options-list li {
@@ -25,6 +30,7 @@
   cursor: pointer;
   margin-bottom: 2rem;
   width: 100%;
+  
 }
 
 .order-history {
@@ -32,19 +38,12 @@
   padding: 1rem;
 }
 
-.order-history h2 {
-  font-size: 1.5rem;
-}
 
 .order-item {
-  border: 1px solid #ccc;
+  border: .1rem solid #ccc;
   border-radius: 6px;
   padding: 1rem;
   margin-bottom: 1rem;
-}
-
-.order-item h3 {
-  margin: 0;
 }
 
 .order-item ul {
@@ -54,6 +53,52 @@
 .order-item li {
   list-style: none;
 }
+
+.orders-list{
+  margin-top: 2rem;
+}
+
+
+.edit-profile {
+  margin-top: 2rem;
+  margin-bottom: 5rem;
+  padding: 1rem;
+  border: 1px solid #ccc;
+  border-radius: .6rem;
+  color: var(--primary-green);
+  width: 100%; 
+  max-width: 720px;
+}
+
+.edit-profile label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 1rem;
+  
+}
+
+.edit-profile input {
+  padding: 0.5rem;
+  font-size: 1rem;
+  border: .1rem solid #ccc;
+  border-radius: .4rem;
+  
+}
+
+.edit-profile button {
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  color: #fff;
+  background-color: var(--primary-green);
+  border: none;
+  border-radius: .4rem;
+  cursor: pointer;
+}
+
+.edit-profile button:hover {
+  background-color: var(--primary-lightgreen);
+}
+
 
 @media (min-width: 768px) {
   .Dashboard {
@@ -65,4 +110,6 @@
   .Dashboard {
     width: 70%;
   }
+  
 }
+

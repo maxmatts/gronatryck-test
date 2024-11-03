@@ -1,66 +1,99 @@
 // src/components/AdminPage.js
-import React from 'react'; // Importerar React-biblioteket
-import '../styles/admin.css'; // Importerar stilmallen för admin-sidan
+import React, { useEffect, useState } from 'react';
+import '../styles/admin.css';
 
-function AdminPage({ onLogout }) { // Tar emot en prop för logga ut-funktionalitet
+function AdminPage({ onLogout }) {
+  const [orders, setOrders] = useState([]);
+  const [showOrders, setShowOrders] = useState(false); // State to control visibility of orders section
+
+  useEffect(() => {
+    const storedOrders = localStorage.getItem('customerOrders');
+    if (storedOrders) {
+      setOrders(JSON.parse(storedOrders));
+    }
+  }, []);
+
+  const toggleOrders = () => {
+    setShowOrders(!showOrders);
+  };
+
   return (
-    <div className="admin-container"> {/* Huvudbehållare för admin-innehållet */}
-
+    <div className="admin-container">
       <div className="cart-heading">
-        <h1 className='heading-3 header-label'>Admin Panel</h1> {/* Rubrik för admin-sidan */}
+        <h1 className="main-heading page-heading">Admin Panel</h1>
       </div>
 
-      {/* Tabbar för att växla mellan olika tidsperioder */}
       <div className="tabs">
-        <button className="tab active">Dag</button> {/* Aktuell tab */}
+        <button className="tab active">Dag</button>
         <button className="tab">Vecka</button>
         <button className="tab">Månad</button>
         <button className="tab">År</button>
       </div>
 
-      {/* Behållare för admin-kort */}
-      <div className='admin-card-container'>
+      <div className="admin-card-container">
         <div className="admin-card">
-          <h3>Beställningar</h3> {/* Rubrik för beställningar */}
+          <h3>Beställningar</h3>
           <div className="data">
-            <span className="number">3</span> {/* Visar antal beställningar */}
-            <span className="percentage">+65%</span> {/* Visar procentuell förändring */}
+            <span className="number">{orders.length}</span>
+            <span className="percentage">+65%</span>
           </div>
         </div>
 
         <div className="admin-card">
-          <h3>Omsättning</h3> {/* Rubrik för omsättning */}
+          <h3>Omsättning</h3>
           <div className="data">
-            <span className="number">15,000 SEK</span> {/* Visar omsättning */}
-            <span className="percentage">+65%</span> {/* Visar procentuell förändring */}
+            <span className="number">15,000 SEK</span>
+            <span className="percentage">+65%</span>
           </div>
         </div>
 
         <div className="admin-card">
-          <h3>Besökare</h3> {/* Rubrik för besökare */}
+          <h3>Besökare</h3>
           <div className="data">
-            <span className="number">7</span> {/* Visar antal besökare */}
-            <span className="percentage">+0.3%</span> {/* Visar procentuell förändring */}
+            <span className="number">7</span>
+            <span className="percentage">+0.3%</span>
           </div>
         </div>
 
-        {/* Anteckningskort för att visa viktiga uppgifter */}
         <div className="admin-card notes-card">
-          <h3>Anteckningar</h3> {/* Rubrik för anteckningar */}
+          <h3>Anteckningar</h3>
           <ul>
-            <li>Inventera lagret</li> {/* Anteckning 1 */}
-            <li>Skicka order 123667 till annan adress enligt kundens önskemål</li> {/* Anteckning 2 */}
+            <li>Inventera lagret</li>
+            <li>Skicka order 123667 till annan adress enligt kundens önskemål</li>
           </ul>
         </div>
       </div>
 
-      {/* Logga ut-knapp */}
+      {/* Toggle Orders Button */}
+      <button className="toggle-orders-btn" onClick={toggleOrders}>
+        {showOrders ? "Dölj Ordrar" : "Visa Ordrar"}
+      </button>
+
+      {showOrders && (
+        <div className="orders-list">
+          <h3 className="subheading heading-3">Lista över Ordrar</h3>
+          <div className="order-cards">
+            {orders.length > 0 ? (
+              orders.map((order, index) => (
+                <div key={index} className="order-card">
+                  <h4>Order ID: {order.orderId}</h4>
+                  <p><strong>Kund:</strong> {order.customerInfo.firstname} {order.customerInfo.lastname}</p>
+                  <p><strong>Total Kostnad:</strong> {order.totalCost} SEK</p>
+                 
+                </div>
+              ))
+            ) : (
+              <p>Inga ordrar tillgängliga.</p>
+            )}
+          </div>
+        </div>
+      )}
+
       <div className="logout-btn">
-        <button className="main-btn" onClick={onLogout}>Logga ut</button> {/* Anropar onLogout-funktionen vid klick */}
+        <button className="main-btn" onClick={onLogout}>Logga ut</button>
       </div>
     </div>
   );
 }
 
-export default AdminPage; // Exporterar AdminPage-komponenten
-
+export default AdminPage;

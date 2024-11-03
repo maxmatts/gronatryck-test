@@ -19,23 +19,38 @@ function HeroDisplay({ media }) {
           src="/videos/STST_AW24_CAMPAIGN_VIDEO_NO_TEXT.mp4" // Källa för videofilen
           type="video/mp4" // Typ av videoformat
         />
-        Your browser does not support the video tag. // Meddelande för webbläsare som inte stödjer video
+        Your browser does not support the video tag. // Meddelande för
+        webbläsare som inte stödjer video
       </video>
-      
     );
   } else {
     return (
       // Returnerar en bild om media är false
-      <img
-        src="/img/cover/Stanley_Stella_AW24_Timeless_Outerwear_Mix_01.jpg" // Källa för bildfilen
-        alt="Hero" // Alternativtext för bilden
+      <picture
         className="hero-image" // CSS-klass för styling
-        id="hero-image" // Unikt id för bildelementet
-      />
+        id="hero-image"
+      >
+        <source
+          srcSet="/img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_hd.webp 600w, /img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_fullhd.webp 1200w"
+          type="image/webp"
+        />
+        <source
+          srcSet="/img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_hd.png 600w, /img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_fullhd.png 1200w"
+          type="image/png"
+        />
+        {/* Fallback bild om ingen av ovanstående källor kan användas */}
+        <img
+          src="/img/decorative/cover/Stanley_Stella_AW24_Timeless_Outwear_Mix_01_fullhd.png" // Fallback
+          alt="En grupp modeller som bär Stanley Stella-märkta utomhuskläder" // Alt-text för tillgänglighet
+          loading="lazy" // Laddar bilden lat för att förbättra prestanda
+          className="hero-img"
+          width="1920"
+          height="1080"
+        />
+      </picture>
     );
   }
 }
 
 // Exporterar HeroDisplay-komponenten så att den kan användas i andra filer
 export default HeroDisplay;
-

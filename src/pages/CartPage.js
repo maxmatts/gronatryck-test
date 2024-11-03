@@ -51,7 +51,7 @@ function CartPage() {
 
     const totalPrice = pricePerItem * quantity;
 
-    return totalPrice.toFixed(2);
+    return totalPrice;
   };
 
   console.log(itemTotalPrice);
@@ -249,7 +249,7 @@ function CartPage() {
                           </p>
                           <p className="cart-item-total-price">
                             Totalt:{" "}
-                            {itemTotalPrice(item.totalQuantity, product)} SEK
+                            {itemTotalPrice(item.totalQuantity, product)},00 SEK
                           </p>
                         </div>
                       </Link>
@@ -333,10 +333,29 @@ function CartPage() {
                 </select>
               </label>
             </div>
-            <h4 className="main-body">Pris/St: {pricePerItem} SEK</h4>{" "}
-            <h4 className="main-body"> Schablon: {totalStencilPrice()}SEK</h4>
             <h4 className="main-body">
-              Totalt tryckpris: {totalPrintPrice()} SEK
+              Pris/St:{" "}
+              {pricePerItem.toLocaleString("sv-SE", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}{" "}
+              SEK
+            </h4>
+            <h4 className="main-body">
+              Schablon:{" "}
+              {Number(totalStencilPrice(0)).toLocaleString("sv-SE", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}{" "}
+              SEK
+            </h4>
+            <h4 className="main-body">
+              Totalt tryckpris:{" "}
+              {Number(totalPrintPrice()).toLocaleString("sv-SE", {
+                minimumFractionDigits: 2,
+                maximumFractionDigits: 2,
+              })}{" "}
+              SEK
             </h4>
             <div className="file-upload-section">
               <label>
@@ -354,8 +373,8 @@ function CartPage() {
               </label>
             </div>
             <div className="tab-content print-price">
-              <h1
-                className="heading-3"
+              <p
+                className="main-body"
                 onClick={togglePrintSection}
                 style={{ cursor: "pointer" }}
               >
@@ -363,17 +382,37 @@ function CartPage() {
                 <span className="toggle-arrow">
                   {openPrintSection ? "▲" : "▼"}
                 </span>
-              </h1>
+              </p>
               {openPrintSection && renderPrintPrices()}
             </div>
-          </div>
-        </div>
-      )}
 
-      <div className="price-container">
+
+
+
+
+
+  <div className="price-container">
         <h5 className="main-body">Antal varor: {getTotalQuantity()} St</h5>
-        <h5 className="main-body">Pris för kläder: {clothTotalPrice()} SEK</h5>
-        <h5 className="main-body">Pris för tryck: {totalPrintPrice()} SEK</h5>
+        <h5 className="main-body">
+          Pris för kläder:{" "}
+          {clothTotalPrice()
+            .toLocaleString("sv-SE", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+            .replace(".", ",")}{" "}
+          SEK
+        </h5>
+        <h5 className="main-body">
+          Pris för tryck:{" "}
+          {totalPrintPrice()
+            .toLocaleString("sv-SE", {
+              minimumFractionDigits: 2,
+              maximumFractionDigits: 2,
+            })
+            .replace(".", ",")}{" "}
+          SEK
+        </h5>
 
         <div className="cart-heading price-heading left">
           <h1 className="heading-3">
@@ -390,6 +429,25 @@ function CartPage() {
           </button>
         )}
       </div>
+
+
+
+
+
+
+            
+
+
+
+
+
+
+            
+          </div>
+        </div>
+      )}
+
+    
     </div>
   );
 }

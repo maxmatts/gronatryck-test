@@ -5,7 +5,7 @@ import {
   Route,
   Navigate,
 } from "react-router-dom";
-import { CartProvider } from "./context/CartContext"; 
+import { CartProvider } from "./context/CartContext";
 //import Navbar from "./components/Navbar";
 import Home from "./pages/Home";
 import PageScroller from "./components/PageScroller";
@@ -26,7 +26,7 @@ import "./styles/general.css";
 import Chat from "./components/Chat";
 import ScrollToTopButton from "./components/ScrollToTop";
 import ConfirmationPage from "./pages/ConfirmationPage";
-import Footer from "./components/Footer"; 
+import Footer from "./components/Footer";
 import Aboutus from "./pages/Aboutus.js";
 import Header from "./components/Header.js";
 import Assortment from "./pages/Assortment";
@@ -36,11 +36,10 @@ import Cases from "./pages/Cases.js";
 import FAQpage from "./pages/FAQ.js";
 import TermsPage from "./pages/TermsOfPurchase.js";
 
-import ServiceDetail from './pages/ServiceDetail'; 
-
+import ServiceDetail from "./pages/ServiceDetail";
 
 function App() {
-  const [loggedInUser, setLoggedInUser] = useState(null); 
+  const [loggedInUser, setLoggedInUser] = useState(null);
 
   useEffect(() => {
     // Kontrollera om användaren redan är inloggad
@@ -65,15 +64,13 @@ function App() {
     if (user) {
       user.role = "Customer";
       localStorage.setItem(user.email, JSON.stringify(user));
-      alert("Registration successful!");
     }
   };
 
   // Handle login
   const handleLogin = (user) => {
     if (!user || !user.email || !user.password) {
-      alert("Please enter both email and password.");
-      return null;
+      return "Vänligen ange både e-postadress och lösenord.";
     }
 
     const storedUser = localStorage.getItem(user.email);
@@ -85,13 +82,7 @@ function App() {
         setLoggedInUser(parsedUser);
         localStorage.setItem("loggedInUser", JSON.stringify(parsedUser)); // Save logged in user
         return parsedUser; // Return the logged-in user object
-      } else {
-        alert("Incorrect password.");
-        return null;
       }
-    } else {
-      alert("User does not exist.");
-      return null;
     }
   };
 
@@ -103,26 +94,25 @@ function App() {
         const parsedUser = JSON.parse(storedUser);
         parsedUser.password = newPassword;
         localStorage.setItem(email, JSON.stringify(parsedUser));
-        alert("Password reset!");
+        return true;
       } else {
-        alert("Email address does not exist.");
+        return false;
       }
     }
   };
 
   // Hantera utloggning
   const handleLogout = () => {
-    localStorage.removeItem("loggedInUser"); // Ta bort inloggningsdata
-    setLoggedInUser(null); // Återställ state
+    localStorage.removeItem("loggedInUser");
+    setLoggedInUser(null);
   };
 
   return (
     <CartProvider>
       <Router>
-      <PageScroller />
+        <PageScroller />
         {/* <Navbar loggedInUser={loggedInUser} onLogout={handleLogout} /> */}
         <div className="page-wrapper">
-       
           <Header />
           <Chat />
           <Routes>
@@ -132,13 +122,13 @@ function App() {
             <Route path="/tjanster" element={<Services />} />
             <Route path="/produkter" element={<Products />} />
             <Route path="/produkter/:category" element={<Products />} />
-            
+
             <Route path="/for-aterforsaljare" element={<Resells />} />
             <Route path="/cart" element={<CartPage />} />
             <Route path="/kontakt" element={<Contact />} />
             <Route path="/kopvillkor" element={<TermsPage />} />
-            <Route path="/kategori" element={<Categories/>} />
-            <Route path="/FAQ" element={<FAQpage/>} />
+            <Route path="/kategori" element={<Categories />} />
+            <Route path="/FAQ" element={<FAQpage />} />
             <Route
               path="/mina-sidor"
               element={<CustomerPage onLogin={handleLogin} />}
@@ -158,6 +148,7 @@ function App() {
               path="/produkter/:id/:productSlug"
               element={<ProductDetail />}
             />
+
             <Route path="/tjanster/:serviceId" element={<ServiceDetail />} />
 
             <Route path="/checkout" element={<Checkout />} />

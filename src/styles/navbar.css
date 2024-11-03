@@ -1,105 +1,74 @@
 .nav {
   width: 90%;
-  
-  &.desktop {
-    display: none;
-    li .nav-link {
-      border-bottom: none;
-      padding: 0rem;
-      margin-inline-end: 1.6rem;
-    }
-  }
-  &.categories {
-    display: grid;
-    grid-template-columns: 1fr;
-  }
-  li {
-    max-width: 100%;
-   
-  }
-  li .nav-link {
-    display: flex;
-    justify-content: space-between;
-    padding: 1.6rem;
-    border-bottom: 1px solid var(--bright-color);
-    color: var(--primary-dark);
-    text-transform: uppercase;
-  }
-
+  margin-inline: auto;
 }
-
-.header-icon{
+.nav li {
+  max-width: 100%;
+  width: 100%;
+}
+.categories {
+  display: grid;
+}
+.nav-link {
+  display: block;
+  padding-block: 1rem;
+  border-bottom: 1px solid var(--bright-color);
+  text-transform: uppercase;
+}
+.desktop {
+  display: none;
+}
+.header-icon {
   width: 2rem;
   height: auto;
-  
 }
 
-.nav-heading{
+.nav-heading {
   margin: 3rem 0;
   text-align: left;
- 
 }
-
-
-
-
-
-
-
-
 
 .cart-quantity-badge {
   position: absolute;
-  top: -0.5rem;
-  right: -0.5rem;
+  top: -1.5rem;
+  right: -1rem;
+  aspect-ratio: 1/1;
+  text-align: center;
+  display: grid;
+  justify-content: center;
+  align-items: center;
   background-color: var(--primary-dark);
   color: white;
-  font-size: 0.8rem;
+  font-size: 1rem;
   border-radius: 50%;
   padding: 0.3rem 0.6rem;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width:1005px){
-
-
-  .nav{
+@media (min-width: 1005px) {
+  .nav {
     width: 100%;
   }
 
-  .nav.categories {
-    grid-template-columns: 1fr 1fr; 
-    gap: 3rem; 
+  .categories {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
-  li {
-    width: auto; 
+  .nav li {
+    width: auto;
+  }
+  .desktop {
+    gap: 2rem;
+  }
+  .desktop .nav-link {
+    padding-block: 0;
+    border-color: transparent;
   }
 
- 
-}
+  .desktop .nav-link:hover {
+    border-color: var(--primary-green);
+  }
 
-
-@media (min-width:1200px){
-
-
-  .nav.desktop li {
-    margin: 0 1rem;
-    
-  } 
-
+  .desktop li .nav-link {
+    transition: margin-bottom 0.3s ease, border-bottom 0.3s ease;
+  }
 }

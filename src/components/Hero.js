@@ -5,19 +5,24 @@ import HeroDisplay from "./HeroDisplay.js"; // Importera HeroDisplay-komponenten
 
 // Hero-komponenten
 export default function Hero() {
-  const [video, setVideo] = useState(true); // Hantera tillstånd för att visa video eller bild
+  const [video, setVideo] = useState(window.innerWidth > 768); // Hantera tillstånd för att visa video eller bild
 
   return (
-    <section className="hero-section"> {/* Wrapper för hero-sektionen */}
-      <div>
-        <HeroDisplay media={video} /> {/* Visa media baserat på tillstånd */}
-      </div>
-      <div className="hero-content-container container"> {/* Innehåll i hero-sektionen */}
+    <section className="hero-section">
+      {" "}
+      {/* Wrapper för hero-sektionen */}
+      <HeroDisplay media={video} /> {/* Visa media baserat på tillstånd */}
+      <div className="hero-content-container container">
+        {" "}
+        {/* Innehåll i hero-sektionen */}
         <div className="hero-content">
-          <span style={{ textTransform: "uppercase", fontWeight: "300" }}>
+          {/* <span style={{ textTransform: "uppercase", fontWeight: "300" }}>
             Most Northern Official Stanley Stella Dealer
-          </span>
-          <h1 className="main-heading">Hållbart Tryck, Rättvis Framtid.</h1> {/* Huvudrubrik */}
+          </span> */}
+          <div className="sustainability-container">
+            <h1 className="main-heading">Tryck med omtanke</h1>
+            <p className="main-body">– hållbarhet i varje detalj.</p>
+          </div>
           <p>
             Välkommen till Gröna Tryck – din pålitliga partner för hållbara och
             rättvisemärkta trycklösningar och profilkläder. Vi kombinerar modern
@@ -25,7 +30,9 @@ export default function Hero() {
             produkter, anpassade efter dina behov. Utforska vårt utbud och var
             med och bidra till en mer hållbar framtid.
           </p>
-          <div style={{ display: "flex", gap: "1.6rem" }}> {/* Flexbox för knappar */}
+          <div style={{ display: "flex", gap: "1.6rem" }}>
+            {" "}
+            {/* Flexbox för knappar */}
             <Button
               to="/sortiment"
               content={"Utforska vårt sortiment"} // Text för första knappen
@@ -33,7 +40,7 @@ export default function Hero() {
             />
             <Button
               to="/om-grona-tryck"
-              content="Vår historia" // Text för andra knappen
+              content="Om oss" // Text för andra knappen
               className="second-btn" // Klass för styling
             />
           </div>
@@ -42,4 +49,3 @@ export default function Hero() {
     </section>
   );
 }
-

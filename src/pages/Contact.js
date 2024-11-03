@@ -49,10 +49,9 @@ function Contact() {
   return (
     <div>
       {submitted ? (
-        <div>
-          <h2>Tack för att du kontaktar oss!</h2>
-          <p>Vi kommer att kontakta dig så snart som möjligt.</p>
+        <div className="submitted">
           <Link to="/">Hem</Link>
+          <h2 className="main-body">Tack för att du kontaktar oss! <br/>Vi kommer att kontakta dig så snart som möjligt.</h2>
         </div>
       ) : (
         <div className="contact-page">
@@ -63,8 +62,89 @@ function Contact() {
               className="hero-image"
               id="aboutus-hero-image"
             />
-          </section>
 
+
+          </section>
+<div className="contact-page-container">
+          <div className="cart-heading">
+            <h1 className="main-heading">Kontakta oss</h1>
+          </div>
+          <div className="login-container print-container">
+            <form onSubmit={handleSubmit}>
+              <div className="input-container">
+                <h6 className="input-label">Namn:</h6>
+                <input
+                  className="input-login"
+                  type="text"
+                  name="name"
+                  value={formData.name}
+                  onChange={handleChange}
+                  required
+                  placeholder="För & Efternamn"
+                />
+              </div>
+
+              <div className="input-container">
+                <h6 className="input-label">Email:</h6>
+                <input
+                  className="input-login"
+                  type="email"
+                  name="email"
+                  value={formData.email}
+                  onChange={handleChange}
+                  placeholder="test@test.se"
+                  required
+                />
+              </div>
+
+              <div className="input-container">
+                <h6 className="input-label">Telefonnummer:</h6>
+                <input
+                  className="input-login"
+                  type="tel"
+                  name="phone"
+                  value={formData.phone}
+                  onChange={handleChange}
+                  placeholder="123456789"
+                  required
+                />
+              </div>
+
+              <div className="file-upload-section input-container">
+                <h6 className="input-label">Ladda upp en fil eller bild</h6>
+                <input type="file" name="file" onChange={handleChange} />
+              </div>
+
+              {imagePreviewUrl && ( // Show preview of the image
+                <div>
+                  <p>Förhandsvisning av vald bild:</p>
+                  <img
+                    src={imagePreviewUrl}
+                    alt="Förhandsvisning"
+                    style={{ width: "200px", height: "auto" }}
+                  />
+                </div>
+              )}
+
+              <div className="input-container">
+                <h6 className="input-label">Meddelande:</h6>
+                <textarea
+                  className="input-login"
+                  name="message"
+                  value={formData.message}
+                  onChange={handleChange}
+                  placeholder="Skriv ett meddelande..."
+                  required
+                ></textarea>
+              </div>
+
+              <div className="btn-container-1">
+                <button className="main-btn" type="submit">
+                  Skicka meddelande
+                </button>
+              </div>
+            </form>
+          </div>
           <div className="contact-info main-body">
             <div className="contact-section">
               <h1 className="section-heading heading-3">Gröna Tryck</h1>
@@ -107,95 +187,11 @@ function Contact() {
               <p>Dir. tel. Produktion: +46 (0)90 34 35 351</p>
             </div>
           </div>
-
-          <div className="cart-heading">
-            <h1 className="heading-3 header-label">Kontakta oss</h1>
-          </div>
-
-          <div className="login-container print-container">
-            <p className="main-body">
-              Har du frågor, funderingar eller idéer? Tveka inte att höra av
-              dig! Vårt team är här för att hjälpa dig!
-            </p>
-
-            <form onSubmit={handleSubmit}>
-              <div className="input-container">
-                <h6 className="input-label">Namn:</h6>
-                <input
-                  className="input-login"
-                  type="text"
-                  name="name"
-                  value={formData.name}
-                  onChange={handleChange}
-                  required
-                  placeholder="För & Efternamn"
-                />
-              </div>
-
-              <div className="input-container">
-                <h6 className="input-label">Email</h6>
-                <input
-                  className="input-login"
-                  type="email"
-                  name="email"
-                  value={formData.email}
-                  onChange={handleChange}
-                  placeholder="test@test.se"
-                  required
-                />
-              </div>
-
-              <div className="input-container">
-                <h6 className="input-label">Telefonnummer</h6>
-                <input
-                  className="input-login"
-                  type="tel"
-                  name="phone"
-                  value={formData.phone}
-                  onChange={handleChange}
-                  placeholder="123456789"
-                  required
-                />
-              </div>
-
-              <div className="file-upload-section input-container">
-                <h6 className="input-label">Ladda upp en fil eller bild</h6>
-                <input type="file" name="file" onChange={handleChange} />
-              </div>
-
-              {imagePreviewUrl && ( // Show preview of the image
-                <div>
-                  <p>Förhandsvisning av vald bild:</p>
-                  <img
-                    src={imagePreviewUrl}
-                    alt="Förhandsvisning"
-                    style={{ width: "200px", height: "auto" }}
-                  />
-                </div>
-              )}
-
-              <div className="input-container">
-                <h6 className="input-label">Meddelande</h6>
-                <textarea
-                  className="input-login"
-                  name="message"
-                  value={formData.message}
-                  onChange={handleChange}
-                  placeholder="Skriv ett meddelande..."
-                  required
-                ></textarea>
-              </div>
-
-              <div className="btn-container-1">
-                <button className="main-btn" type="submit">
-                  Skicka meddelande
-                </button>
-              </div>
-            </form>
-          </div>
+        </div>
         </div>
       )}
     </div>
+    
   );
 }
 

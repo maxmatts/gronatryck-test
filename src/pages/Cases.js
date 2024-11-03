@@ -8,8 +8,8 @@ const Cases = () => {
         <div className="cases-container">
 
 <div className="cart-heading">
-          <h1 className="heading-3 header-label">Kundberättelser</h1>
-        </div>
+        <h1 className="main-heading page-heading">Kundberättelser</h1>
+      </div>
             
             
             <div className="case-section">

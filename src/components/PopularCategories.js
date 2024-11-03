@@ -1,28 +1,31 @@
-// Importerar Link från react-router-dom för navigering mellan sidor
+// PopularCategories component
 import { Link } from "react-router-dom";
+import "../styles/Categories.css";
+import "../styles/test.css";
 
-// Definierar PopularCategories-komponenten som tar emot props title och categoryList
-export default function PopularCategories({ title, categoryList }) {
-    // Loggar categoryList till konsolen för att kontrollera dess innehåll
-    console.log(categoryList);
-    
-    return (
-        // Sektion för populära kategorier
-        <section className="popular-categories">
-            {/* Visar rubrik om title är angiven */}
-            {title ? <h2 className="section-heading">{title}</h2> : ''}
-            <div className="categories-grid">
-                {/* Mappar genom categoryList för att skapa en lista med kategorier */}
-                {categoryList.map((item) => {
-                    return (
-                        // Länk till varje kategori
-                        <Link to={item.to} className="category" key={item.label}>
-                            <img src={item.img} alt={item.alt} /> {/* Visar kategori-bild */}
-                            <div className="category-label label-with-bg main-body">{item.label}</div> {/* Visar kategori-label */}
-                        </Link>
-                    );
-                })}
-            </div>
-        </section>
-    );
+export default function PopularCategories({ title, categoryList, grid }) {
+  console.log(categoryList);
+  console.log(grid);
+
+  return (
+    <section className="popular-categories">
+      {title ? <h2 className="section-heading">{title}</h2> : ""}
+      <div
+        className={`categories-grid ${grid ? "grid-type-2" : "grid-type-4"}`}
+      >
+        {categoryList.map((item) => {
+          return (
+            <Link to={item.to} className="category" key={item.label}>
+              <img src={item.img} alt={item.alt} />{" "}
+              {/* Display category image */}
+              <div className="label-with-bg">
+                <div className="category-label">{item.label}</div>{" "}
+                {/* Display category label */}
+              </div>
+            </Link>
+          );
+        })}
+      </div>
+    </section>
+  );
 }

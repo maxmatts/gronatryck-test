@@ -8,24 +8,23 @@
   --bright-color: #e0e5d3;
   --white-color: #fafafa;
 
-  /*Z index*/
-  --layer-1: 5;
-  --layer-2: 15;
-  --layer-3: 25;
-  --layer-4: 35;
+  --autumn-color: #cc7f3a;
+  --summer-color: #699647;
+  --winter-color: #6d9e92;
+  --spring-color: #c1a736;
 
   /*FONT*/
   --bodyFont: "Source Sans 3", sans-serif;
   --headingFont: "Montserrat", sans-serif;
   --subHeadingFont: "Raleway", sans-serif;
 
-  --fontSizeXXL: 4.5rem; /* 45px */
-  --fontSizeXL: 3.5rem; /* 35px */
-  --fontSizeLG: 2.9rem; /* 29px */
-  --fontSizeMD: 2.3rem; /* 23px */
-  --fontSizeSM: 1.8rem; /* 18px */
-  --fontSizeXS: 1.4rem; /* 14px */
-  --fontSizeXSS: 0.9rem; /* 9px */
+  --fontSizeXXL: 6rem; /* 45px */
+  --fontSizeXL: 4.8rem; /* 35px */
+  --fontSizeLG: 3.9rem; /* 29px */
+  --fontSizeMD: 3.1rem; /* 23px */
+  --fontSizeSM: 2.4rem; /* 18px */
+  --fontSizeXS: 1.6rem; /* 14px */
+  --fontSizeXSS: 1.2rem; /* 9px */
 
   --small-spacing: 1rem;
   --medium-spacing: 2rem;
@@ -36,10 +35,9 @@
 
 body {
   background-color: #fafafa;
-  font-size: var(--fontSizeSM);
+  font-size: var(--fontSizeXS);
   font-family: var(--bodyFont);
   line-height: 1.6;
- 
 }
 a {
   text-decoration: none;
@@ -86,7 +84,7 @@ a {
 
 .nav-link {
   font-family: var(--subHeadingFont);
-  font-size: var(--fontSizeSM);
+  font-size: var(--fontSizeXS);
 }
 
 .container {

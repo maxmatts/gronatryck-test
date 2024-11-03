@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 127.293 129.204">
+  <defs>
+    <style>
+      .cls-1 {
+        stroke: #fff;
+      }
+      .cls-1, .cls-2 {
+        fill: #fff;
+      }
+      .cls-1, .cls-2, .cls-3 {
+        stroke-width: 5px;
+      }
+      .cls-2, .cls-3 {
+        stroke: #606f4a;
+      }
+      .cls-3 {
+        fill: #606f4a;
+      }
+    </style>
+  </defs>
+    <g id="yt_icon_inverted">
+      <rect id="frame" class="cls-2" x="2.5" y="2.5" width="122.293" height="124.204" rx="12.797" ry="12.797"/>
+      <rect id="button" class="cls-3" x="15.861" y="30.704" width="95.57" height="66.038" rx="12.012" ry="12.012"/>
+      <path id="play" class="cls-1" d="m53.613,50.702v27.799c0,.23.231.383.432.285l27.692-13.436c.23-.112.234-.449.007-.567l-27.692-14.363c-.202-.105-.439.048-.439.282Z"/>
+    </g>
+</svg>

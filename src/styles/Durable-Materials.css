@@ -1,7 +1,21 @@
 .sustainability-page-container {
    
     margin: auto;
-    
+   margin-top: 15rem; 
+}
+
+.sustainability-work{
+  margin-top: 5rem;
+}
+
+.sustainability-work p{
+  margin: .5rem 0rem 1rem 0rem;
+  line-height: 1.5;
+}
+
+.sustainability-work li{
+  margin: .5rem 0;
+  
 }
 
 .info-box-container {
@@ -82,7 +96,7 @@
   
   .certification-item {
     flex: 1 1 45%; 
-    margin: 1rem; 
+    margin: 1rem 0; 
     display: flex;
     flex-direction: column;
   }
@@ -111,6 +125,7 @@
    
    
   }
+   
 
 
 

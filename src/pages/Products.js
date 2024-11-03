@@ -1,8 +1,8 @@
-import React, { useState } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import products from "../data/product.js";
 import Card from "../components/Cards.js";
 import "../styles/card.css";
-import { useLocation, useParams } from "react-router-dom";
+import { useParams } from "react-router-dom";
 import Breadcrumb from "../components/Breadcrumb.js";
 import { LuChevronDown } from "react-icons/lu";
 
@@ -11,9 +11,7 @@ const getUniqueColors = (products) => {
 
   products.forEach((product) => {
     product.images.variants?.forEach((variant) => {
-      const colorKey = `${variant.colorName.toLowerCase()}-${
-        variant.colorCode
-      }`;
+      const colorKey = `${variant.colorName.toLowerCase()}-${variant.colorCode}`;
       if (!colorMap.has(colorKey)) {
         colorMap.set(colorKey, {
           name: variant.colorName.toLowerCase(),
@@ -23,9 +21,7 @@ const getUniqueColors = (products) => {
     });
   });
 
-  const uniqueColors = Array.from(colorMap.values());
-
-  return uniqueColors;
+  return Array.from(colorMap.values());
 };
 
 const getUniqueBrands = (products) => {
@@ -49,15 +45,19 @@ const getUniqueSizes = (products) => {
 const Products = () => {
   const { category } = useParams();
   const [title, setTitle] = useState(category || "Alla produkter");
-
   const [sort, setSort] = useState("");
   const [selectedColors, setSelectedColors] = useState([]);
   const [selectedBrands, setSelectedBrands] = useState([]);
   const [selectedSizes, setSelectedSizes] = useState([]);
-
   const [isColorDropdownOpen, setIsColorDropdownOpen] = useState(false);
   const [isBrandDropdownOpen, setIsBrandDropdownOpen] = useState(false);
   const [isSizeDropdownOpen, setIsSizeDropdownOpen] = useState(false);
+  const [isFilterVisible, setIsFilterVisible] = useState(false);
+
+  // Create refs for dropdowns
+  const colorDropdownRef = useRef(null);
+  const brandDropdownRef = useRef(null);
+  const sizeDropdownRef = useRef(null);
 
   const uniqueColors = getUniqueColors(products);
   const uniqueBrands = getUniqueBrands(products);
@@ -88,7 +88,6 @@ const Products = () => {
 
       return matchesCategory && matchesColor && matchesBrand && matchesSize;
     })
-
     .sort((a, b) => {
       if (sort === "Nyast") return b.date - a.date;
       if (sort === "Lägsta pris")
@@ -100,8 +99,7 @@ const Products = () => {
     });
 
   const productCards = filteredProducts.map((product) => {
-    const { productId, name, category, images, sizeVariants, priceTiers } =
-      product;
+    const { productId, name, category, images, sizeVariants, priceTiers } = product;
     const { modelUrl, variants } = images;
 
     const minPrice = Math.min(...priceTiers.map((tier) => tier.price));
@@ -152,22 +150,39 @@ const Products = () => {
     );
   };
 
-  const [isFilterVisible, setIsFilterVisible] = useState(false);
+  // Handle clicks outside the dropdowns
+  const handleClickOutside = (event) => {
+    if (
+      colorDropdownRef.current &&
+      !colorDropdownRef.current.contains(event.target)
+    ) {
+      setIsColorDropdownOpen(false);
+    }
+    if (
+      brandDropdownRef.current &&
+      !brandDropdownRef.current.contains(event.target)
+    ) {
+      setIsBrandDropdownOpen(false);
+    }
+    if (
+      sizeDropdownRef.current &&
+      !sizeDropdownRef.current.contains(event.target)
+    ) {
+      setIsSizeDropdownOpen(false);
+    }
+  };
+
+  useEffect(() => {
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="product-page">
       <div className="heading-margin">
         <h2 className="subheading-1">{title}</h2>
-
-        {/* <p className="main-body">
-          
-          Upptäck ett noga utvalt sortiment av profilkläder och produkter som
-          kombinerar stil och kvalitet. Här hittar du allt från t-shirts och
-          hoodies till accessoarer, med fokus på att du enkelt ska kunna göra
-          ett medvetet val. Vi erbjuder smidiga bulkbeställningar för att
-          säkerställa att ditt företag kan få en enhetlig och professionell look
-          till ett förmånligt pris!
-        </p> */}
       </div>
 
       <div className="product-wrapper">
@@ -186,15 +201,9 @@ const Products = () => {
           {isFilterVisible && (
             <div className="filter-content">
               <div className="filter-group">
-                <label
-                  className="filter-label main-body"
-                  style={{ cursor: "pointer" }}
-                >
+                <label className="filter-label main-body" style={{ cursor: "pointer" }}>
                   Sortera:
-                  <select
-                    value={sort}
-                    onChange={(e) => setSort(e.target.value)}
-                  >
+                  <select value={sort} onChange={(e) => setSort(e.target.value)}>
                     <option value="">Välj sortering</option>
                     <option value="Nyast">Nyast</option>
                     <option value="Lägsta pris">Lägsta pris</option>
@@ -204,7 +213,8 @@ const Products = () => {
                 </label>
               </div>
 
-              <div className="filter-group">
+              {/* Color Filter */}
+              <div className="filter-group" ref={colorDropdownRef}>
                 <button
                   className="filter-btn"
                   onClick={() => setIsColorDropdownOpen((prev) => !prev)}
@@ -213,21 +223,14 @@ const Products = () => {
                     Färg{" "}
                     {selectedColors.length > 0 && `(${selectedColors.length})`}
                   </h3>
-                  <span
-                    className={`arrow-icon ${
-                      isColorDropdownOpen ? "active" : ""
-                    }`}
-                  >
+                  <span className={`arrow-icon ${isColorDropdownOpen ? "active" : ""}`}>
                     <LuChevronDown />
                   </span>
                 </button>
                 {isColorDropdownOpen && (
                   <div className="dropdown-menu">
                     {uniqueColors.map((color) => (
-                      <label
-                        key={color.name}
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
+                      <label key={color.name} style={{ display: "flex", alignItems: "center" }}>
                         <input
                           type="checkbox"
                           value={color.name}
@@ -246,15 +249,15 @@ const Products = () => {
                             verticalAlign: "middle",
                           }}
                         ></span>
-                        {color.name.charAt(0).toUpperCase() +
-                          color.name.slice(1)}
+                        {color.name.charAt(0).toUpperCase() + color.name.slice(1)}
                       </label>
                     ))}
                   </div>
                 )}
               </div>
 
-              <div className="filter-group">
+              {/* Brand Filter */}
+              <div className="filter-group" ref={brandDropdownRef}>
                 <button
                   className="filter-btn"
                   onClick={() => setIsBrandDropdownOpen((prev) => !prev)}
@@ -263,22 +266,14 @@ const Products = () => {
                     Varumärke{" "}
                     {selectedBrands.length > 0 && `(${selectedBrands.length})`}
                   </h3>
-                  <span
-                    className={`arrow-icon ${
-                      isBrandDropdownOpen ? "active" : ""
-                    }`}
-                  >
+                  <span className={`arrow-icon ${isBrandDropdownOpen ? "active" : ""}`}>
                     <LuChevronDown />
                   </span>
                 </button>
-
                 {isBrandDropdownOpen && (
                   <div className="dropdown-menu">
                     {uniqueBrands.map((brand) => (
-                      <label
-                        key={brand}
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
+                      <label key={brand} style={{ display: "flex", alignItems: "center" }}>
                         <input
                           type="checkbox"
                           value={brand}
@@ -293,7 +288,8 @@ const Products = () => {
                 )}
               </div>
 
-              <div className="filter-group">
+              {/* Size Filter */}
+              <div className="filter-group" ref={sizeDropdownRef}>
                 <button
                   className="filter-btn"
                   onClick={() => setIsSizeDropdownOpen((prev) => !prev)}
@@ -302,22 +298,14 @@ const Products = () => {
                     Storlek{" "}
                     {selectedSizes.length > 0 && `(${selectedSizes.length})`}
                   </h3>
-                  <span
-                    className={`arrow-icon ${
-                      isSizeDropdownOpen ? "active" : ""
-                    }`}
-                  >
+                  <span className={`arrow-icon ${isSizeDropdownOpen ? "active" : ""}`}>
                     <LuChevronDown />
                   </span>
                 </button>
-
                 {isSizeDropdownOpen && (
                   <div className="dropdown-menu">
                     {uniqueSizes.map((size) => (
-                      <label
-                        key={size}
-                        style={{ display: "flex", alignItems: "center" }}
-                      >
+                      <label key={size} style={{ display: "flex", alignItems: "center" }}>
                         <input
                           type="checkbox"
                           value={size}
@@ -335,7 +323,7 @@ const Products = () => {
               <button
                 className="reset"
                 onClick={resetFilters}
-                style={{ marginTop: "10px" }}
+              
               >
                 Återställ filter
               </button>
@@ -360,7 +348,7 @@ const Products = () => {
             />
           ))
         ) : (
-          <p>Inga produkter hittades för din sökning.</p>
+          <p>Inga produkter hittades.</p>
         )}
       </div>
     </div>

@@ -10,7 +10,7 @@ const AboutUs = () => {
       {/* Hero Section */}
       <section className="hero-section-2">
         <img
-          src="./img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          src="/img/decorative/kaja-sariwating-ICOnjJTa3N4-unsplash.jpg" // Bakgrundsbild för hero-sektionen
           alt="Hero"
           className="hero-image"
           id="aboutus-hero-image"
@@ -72,7 +72,7 @@ const AboutUs = () => {
               <div className="img-wrapper">
                 <img
                   className="about-img"
-                  src="./img/decorative/derek-owens-YCbJCM249KE-unsplash.jpg"
+                  src="/img/decorative/derek-owens-YCbJCM249KE-unsplash.jpg"
                   alt="Fejk bild på joel"
                 />
                 <h1 className="section-heading heading-3 stanley-heading">
@@ -91,9 +91,7 @@ const AboutUs = () => {
                 </h1>
               </div>
             </div>
-
           </div>
-
           <h1 className="section-heading heading-3">I stolt samarbete med</h1>
           <div className="about-text-containers">
             <div className="logo-container">
@@ -164,16 +162,14 @@ const AboutUs = () => {
               />
             </div>
           </div>
-         
           <FAQ /> {/* Renderar FAQ-komponenten */}
-
           <CustomerCases /> {/* Renderar CustomerCases-komponenten */}
           <div className="btn-container">
-              <Button
-                to="/kundcase" // Länk till kundcase-sidan
-                className="main-btn btn-container"
-                content="Se mer om våra arbeten"
-              />
+            <Button
+              to="/kundcase" // Länk till kundcase-sidan
+              className="main-btn btn-container"
+              content="Se mer om våra arbeten"
+            />
           </div>
         </div>
       </div>
@@ -182,4 +178,3 @@ const AboutUs = () => {
 };
 
 export default AboutUs; // Exporterar AboutUs-komponenten
-

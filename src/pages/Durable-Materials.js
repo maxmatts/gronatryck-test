@@ -5,10 +5,10 @@ const SustainabilityWork = () => {
   return (
     <div className="sustainability-page-container container">
       <div className="cart-heading">
-        <h1 className="heading-3 header-label">Hållbarhetsarbete</h1>
+        <h1 className="main-heading">Hållbarhetsarbete</h1>
       </div>
       <div className="sustainability-work">
-        {/* Each section now has a class that sets it to flex */}
+       
         <section className="flex-section">
           <div className="flex main-body main-body-spacing">
             <h1 className="section-heading heading-3">
@@ -62,9 +62,9 @@ const SustainabilityWork = () => {
           </div>
         </section>
 
-        <section className="membership-section">
+        {/* <section className="membership-section">
           <div className="margin">
-          <div className="brush-background-2"></div> {/* Background div */}
+          <div className="brush-background-2"></div> 
           <div className="membership-form">
             <p className="membership-subheading main-body">
               Vi gör en del av våra tryck själva, medan andra utförs via
@@ -72,7 +72,7 @@ const SustainabilityWork = () => {
             </p>
           </div>
           </div>
-        </section>
+        </section> */}
 
         <section className="flex-section">
           <div className="main-body main-body-spacing">
@@ -137,8 +137,8 @@ const SustainabilityWork = () => {
 
             <div className="certifications-container">
               <div className="certification-item">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">EU Ecolabel</h5>
+                <div className="">
+                  <h3 className="eco">EU Ecolabel</h3>
                 </div>
                 <p>
                   Garanterar att produkterna har minimal påverkan på miljön
@@ -147,10 +147,10 @@ const SustainabilityWork = () => {
               </div>
 
               <div className="certification-item">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">GRS</h5>
+                <div className="">
+                  <h3 className="eco">GRS</h3>
                 </div>
-                <h3>(Global Recycle Standard)</h3>
+                <h5>(Global Recycle Standard)</h5>
                 <p>
                   Verifierar det återvunna innehållet i produkter och
                   säkerställer goda arbetsvillkor och minimal miljöpåverkan.
@@ -158,8 +158,8 @@ const SustainabilityWork = () => {
               </div>
 
               <div className="certification-item">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">Fairtrade</h5>
+                <div className="">
+                  <h3 className="eco">Fairtrade</h3>
                 </div>
                 <p>
                   Säkerställer att bomullen i våra produkter har producerats
@@ -168,8 +168,8 @@ const SustainabilityWork = () => {
               </div>
 
               <div className="certification-item">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">Bluesign</h5>
+                <div className="">
+                  <h3 className="eco">Bluesign</h3>
                 </div>
                 <p>
                   Kontrollerar varje steg i produktionskedjan för att minimera
@@ -179,10 +179,10 @@ const SustainabilityWork = () => {
               </div>
 
               <div className="certification-item">
-                <div className="label-with-bg">
-                  <h5 className="eco main-body">GOTS</h5>
+                <div className="">
+                  <h3 className="eco">GOTS</h3>
                 </div>
-                <h3>(Global Organic Textile Standard)</h3>
+                <h5>(Global Organic Textile Standard)</h5>
                 <p>
                   GOTS är en världsledande standard för kontroll av organiska
                   fibrer, där både ekologiska och sociala kriterier beaktas och
