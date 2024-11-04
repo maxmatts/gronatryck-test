@@ -2,9 +2,9 @@
     width: 90%;
     justify-content: center; 
     margin: auto;
-    max-width: 900px; 
+    max-width: 1300px; 
     margin-bottom: 5rem;
-    margin-top: 15rem;
+    
 }
 
 .resell-page-container {
@@ -15,7 +15,7 @@
 
 .resell-container {
     text-align: left; 
-    margin: 2rem 0; 
+    margin: 5rem 0; 
 }
 
 .resell-text-container{
@@ -41,7 +41,7 @@
 
 .resell-image {
     width: 100%; 
-    height: 100%; 
+    height: auto; 
     object-fit: cover;
     position: absolute; 
     top: 50%; 
@@ -73,8 +73,8 @@
     }
 
     .resell-image-container {
-        width: 30rem; 
-        height: 30rem; 
+        width: 40rem; 
+        height: 40rem; 
     }
 
     /* .label-with-bg {

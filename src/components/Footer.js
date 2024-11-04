@@ -4,7 +4,7 @@ import "../styles/footer.css"; // Importera CSS-filen för att styla footer-komp
 
 const Footer = () => {
   return (
-    <div className="footer"> {/* Huvudcontainer för footern */}
+    <footer className="footer" role="contentinfo"> {/* Huvudcontainer för footern */}
       {/* Mobil- och surfplattans footer */}
       <div className="footer-mobile"> {/* Footer-layout för mobila enheter */}
         <div className="footer-links">
@@ -136,7 +136,7 @@ const Footer = () => {
         </div>
         <p className="copyright">Copyright © gröna tryck 2024</p> {/* Upphovsrättsinformation */}
       </div>
-    </div>
+    </footer>
   );
 };
 

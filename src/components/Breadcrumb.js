@@ -39,12 +39,7 @@ const Breadcrumb = () => {
         })}
       </nav>
 
-      {params.category && (
-        <h2 className="category-heading">
-          {params.category.charAt(0).toUpperCase() + params.category.slice(1)}{" "}
-          Kategori
-        </h2>
-      )}
+    
     </div>
   );
 };

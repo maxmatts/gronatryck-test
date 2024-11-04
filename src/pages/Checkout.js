@@ -54,7 +54,7 @@ function Checkout() {
       </div>
       {loggedInUser ? (
         <>
-          <h1 className='heading-3'>Kundinformation</h1>
+          <h2 className='heading-3'>Kundinformation</h2>
 
           <form>
             <div className="input-container">

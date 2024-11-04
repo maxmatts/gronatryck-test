@@ -68,7 +68,7 @@ const Quote = ({ customer, cartItems }) => {
         </p>
         <p>Företagsnamn: {customer.companyName || 'Inget företag angivet'}</p>
         <p>Adress: {customer.street || 'Ingen adress angiven'}</p>
-        <p>Telefon: {customer.phone || 'Ingen telefon angiven'}</p>
+        <p>Telefonnummer: {customer.phoneNumber || 'Ingen telefon angiven'}</p>
         <p>E-post: {customer.email || 'Ingen e-post angiven'}</p>
         <p>Organisationsnummer: {customer.organizationNumber || 'Ingen organisationsnummer angiven'}</p>
         <p>Offertnummer: {quoteNumber}</p> {/* Visar offertenummer */}

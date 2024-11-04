@@ -26,6 +26,7 @@ const ProductDetail = () => {
   const [isExpanded, setIsExpanded] = useState(false); 
   const [activeTab, setActiveTab] = useState("price"); 
 
+
   const handleColorChange = (color) => {
     setSelectedColor(color);
   };
@@ -167,8 +168,6 @@ const ProductDetail = () => {
 
   const lowestPrice = getLowestPrice();
 
-  
-
   return (
     <div>
      
@@ -183,7 +182,7 @@ const ProductDetail = () => {
 
             <section className="product-info">
               <p className="brand-name">{product.brand}</p>
-              <h1 className="heading-2">{product.name}</h1>
+              <h1 className="heading-2 ">{product.name}</h1>
               <p className="product-description">
                 {isExpanded
                   ? product.description.split("\n").map((line, index) => (
@@ -221,6 +220,7 @@ const ProductDetail = () => {
                       name={variant.colorName}
                       color={variant.colorCode}
                       onChange={() => handleColorChange(variant.colorName)}
+                      checked={selectedColor === variant.colorName}
                     />
                   ))}
                 </fieldset>
@@ -335,7 +335,7 @@ const ProductDetail = () => {
                     </tr>
                   </tbody>
                 </table>
-                <p className="main-body">
+                <p className="main-body spacing">
                   Obs: Tryck -och schablonkostnaderna varierar beroende på
                   plaggets färg och tryckmetod.
                 </p>

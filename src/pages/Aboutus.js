@@ -18,7 +18,7 @@ const AboutUs = () => {
 
         <div className="hero-content-container container">
           <div className="hero-content">
-            <h1 className="main-heading">Om Gröna Tryck</h1>
+            <h1 className="main-heading white">Om Gröna Tryck</h1>
             <p>
               Gröna Tryck är din hållbara partner för profilprodukter och
               återförsäljare av ekologiska och miljövänliga varumärken. Vi
@@ -34,9 +34,9 @@ const AboutUs = () => {
         <div id="aboutus-container" className="aboutus-page-container">
           <div className="about-text-containers">
             <div className="text-container main-body">
-              <h1 className="section-heading heading-3">
+              <h2 className="section-heading heading-3">
                 Norrländska problemlösare..
-              </h1>
+              </h2>
               <p>
                 Vi är ett gäng norrländska problemlösare som brinner för tryck,
                 och vi tycker det är en självklarhet att det görs på bästa sätt.
@@ -75,9 +75,9 @@ const AboutUs = () => {
                   src="/img/decorative/derek-owens-YCbJCM249KE-unsplash.jpg"
                   alt="Fejk bild på joel"
                 />
-                <h1 className="section-heading heading-3 stanley-heading">
+                <h2 className="section-heading heading-3 stanley-heading">
                   Joel
-                </h1>
+                </h2>
               </div>
 
               <div className="img-wrapper">
@@ -86,13 +86,13 @@ const AboutUs = () => {
                   src="./img/decorative/alano-oliveira-3UknV3EZVBs-unsplash.jpg"
                   alt="Fejk bild på Josef"
                 />
-                <h1 className="section-heading heading-3 stanley-heading">
+                <h2 className="section-heading heading-3 stanley-heading">
                   Josef
-                </h1>
+                </h2>
               </div>
             </div>
           </div>
-          <h1 className="section-heading heading-3">I stolt samarbete med</h1>
+          <h2 className="section-heading heading-3">I stolt samarbete med</h2>
           <div className="about-text-containers">
             <div className="logo-container">
               {/* Partner-logos */}

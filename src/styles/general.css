@@ -53,6 +53,9 @@ a {
 .heading-2,
 .heading-3 {
   font-family: var(--headingFont);
+  line-height: 1.2;
+  color: var(--primary-green);
+  font-weight: 500;
 }
 .subheading-1,
 .subheading-2 {
@@ -102,4 +105,8 @@ a {
   &.active svg {
     transform: rotate(180deg);
   }
+}
+
+.spacing-between{
+  margin-bottom: 1rem;
 }

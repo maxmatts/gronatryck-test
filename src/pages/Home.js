@@ -10,25 +10,25 @@ const Home = () => {
     {
       to: "/produkter",
       img: "/img/decorative/gronatryck_group_img.png",
-      alt: "Cool tröja",
+      alt: "Grupp människor som bär schyssta kläder",
       label: "Profilkläder",
     },
     {
       to: "/tjanster",
       img: "/img/decorative/gronatryck_print_img.png",
-      alt: "Västar",
+      alt: "En människa som använder en tryckerimaskin",
       label: "Tjänster",
     },
     {
       to: "/kundcase",
       img: "/img/decorative/gronatryck_clientcase_tshirt_img.png",
-      alt: "Pike",
+      alt: "Två t-shirt som hänger i galgar med en blå himmel i bakgruden",
       label: "Kundberättelser",
     },
     {
       to: "/produkter",
-      img: "/img/decorative/gronatryck_fence_img.png",
-      alt: "Tröjor",
+      img: "/img/decorative/gronatryck_jeanjacket_img.png",
+      alt: "man klädd i en stilig jeans-jacka med ryggen vänd mot kameran",
       label: "Nyheter",
     },
   ];
@@ -132,28 +132,30 @@ const Home = () => {
           <div className="testimonial-content">
             <blockquote className="testimonial-quote">
               <h2 className="section-heading heading-3">
-                Peter väljer rättvisemärkta kläder för sina fans
+                Popgruppen Stars väljer rättvisemärkta kläder för sina fans
               </h2>
-
+              
               <div className="testimonial-content">
                 <div className="testimonial-image">
                   <img
-                    src="/img/decorative/gronatryck_jeanjacket_img.png"
-                    alt="en man med ryggen vänd iklädd en stilig jeans jacka"
+                    src="/img/decorative/gronatryck_fence_img.png"
+                    alt="två kvinnor som står längst ett stängsel"
                   />
+                  
+                  
                 </div>
 
                 <div className="testimonial-text-container">
                   {" "}
                   {/* Added this div for styling */}
                   <p className="main-body testimonial-text">
-                    “Jag vill att min merch speglar mina värderingar, och tack
-                    vare Gröna Tryck kunde jag erbjuda mina fans produkter jag
-                    verkligen står bakom,” säger Peter.
+                    “Vi vill att vår merch speglar våra värderingar, och tack
+                    vare Gröna Tryck kunde vi erbjuda våra fans produkter vi
+                    verkligen står bakom,” säger popduon.
                   </p>
                   <p className="main-body testimonial-text">
                     “Det var också otroligt smidigt att beställa i bulk och få
-                    allt levererat snabbt, samtidigt som jag vet att produkterna
+                    allt levererat snabbt, samtidigt som vi vet att produkterna
                     är certifierade och miljövänliga.”
                   </p>
                   <div className="">
@@ -168,13 +170,6 @@ const Home = () => {
             </blockquote>
           </div>
         </section>
-
-        {/* <section className="sustainability-section">
-          <div className="sustainability-container">
-            <h1 className="section-heading subheading-1">Tryck med omtanke</h1>
-            <p className="main-body">– hållbarhet i varje detalj.</p>
-          </div>
-        </section> */}
 
         {/* Section 7: Membership Registration */}
         <section className="membership-section">

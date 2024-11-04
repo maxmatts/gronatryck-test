@@ -55,21 +55,46 @@ function Contact() {
         </div>
       ) : (
         <div className="contact-page">
-          <section className="hero-section-2">
-            <img
-              src="./img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg"
-              alt="Hero"
-              className="hero-image"
-              id="aboutus-hero-image"
-            />
+      
 
+      <section className="hero-section-2">
+        <img
+          src="/img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          alt="Hero"
+          className="hero-image"
+          id="aboutus-hero-image"
+        />
 
-          </section>
-<div className="contact-page-container">
-          <div className="cart-heading">
-            <h1 className="main-heading">Kontakta oss</h1>
+        <div className="hero-content-container container">
+          <div className="hero-content">
+            <h1 className="main-heading white">Kontakta oss</h1>
+            <p>
+            Vill du veta mer om våra produkter eller tjänster? Kontakta oss idag, så hittar vi de bästa lösningarna för dig!
+            </p>
           </div>
-          <div className="login-container print-container">
+        </div>
+      </section>
+
+<div className="contact-page-container">
+
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div className="login-container print-container contact-container ">
             <form onSubmit={handleSubmit}>
               <div className="input-container">
                 <h6 className="input-label">Namn:</h6>
@@ -147,7 +172,7 @@ function Contact() {
           </div>
           <div className="contact-info main-body">
             <div className="contact-section">
-              <h1 className="section-heading heading-3">Gröna Tryck</h1>
+              <h2 className="section-heading heading-3 spacing-between">Gröna Tryck</h2>
               <p>
                 <strong>Besöksadress:</strong>
                 <br />
@@ -176,7 +201,7 @@ function Contact() {
             </div>
 
             <div className="contact-section">
-              <h1 className="section-heading heading-3">Lager</h1>
+              <h2 className="section-heading heading-3 spacing-between">Lager</h2>
               <p>
                 Adress: Kungsgatan 26
                 <br />

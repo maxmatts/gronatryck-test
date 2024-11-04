@@ -8,13 +8,13 @@ import Button from '../components/Button.js';
 const ServiceDetail = () => {
   const { serviceId } = useParams();
 
-  // Find service, but initialize empty object to prevent undefined errors in state initialization
+  
   const service = services.find((s) => s.serviceId === serviceId) || {};
 
-  // State to handle currently displayed main image and service details
-  const [currentImage, setCurrentImage] = useState(service?.images?.modelUrl?.basePath || '');
 
-  // Subdescription setup
+  const [currentImage] = useState(service?.images?.modelUrl?.basePath || '');
+
+
   const renderSubdescription = () => {
     const points = (service.subdescription || '').split('\n').filter(point => point.trim() !== '');
     return (
@@ -25,24 +25,6 @@ const ServiceDetail = () => {
       </ul>
     );
   };
-
-  // Render additional images with click functionality to update main image
-  // const renderAdditionalImages = () => {
-  //   return (
-  //     <div className="thumbnail-carousel-2">
-  //       {(service.images?.additionalInfo || []).map((img, index) => (
-  //         <img
-  //           key={index}
-  //           src={`${img.basePath}.jpg`}
-  //           alt={img.alt}
-  //           className="thumbnail-image-2"
-  //           onClick={() => setCurrentImage(img.basePath)}
-  //         />
-  //       ))}
-  //     </div>
-  //   );
-  // };
-
   
   if (!service || !service.name) {
     return <div>Tjänsten hittades inte</div>; 
@@ -60,10 +42,10 @@ const ServiceDetail = () => {
                 <img src={`${currentImage}.jpg`} alt="Main Service Image" loading="lazy" />
               </div>
               
-              {/* {renderAdditionalImages()} */}
+        
             </div>
 
-            {/* Service details section */}
+        
             <section className="service-info">
               <h2 className="heading-2">{service.name}</h2>
               <p className="service-description">{service.description}</p>

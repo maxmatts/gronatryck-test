@@ -1,5 +1,6 @@
-General Styles .container {
+.container {
   width: 90%;
+  max-width: 1300px;
 }
 
 .service-grid {
@@ -70,7 +71,7 @@ General Styles .container {
 
 @media (min-width: 1005px) {
   .container {
-    width: 70%;
+  
     margin: auto;
     line-height: 1.2;
   }

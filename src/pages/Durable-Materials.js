@@ -3,40 +3,56 @@ import React from "react";
 
 const SustainabilityWork = () => {
   return (
+    <div>
+        <section className="hero-section-2">
+        <img
+          src="/img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          alt="Hero"
+          className="hero-image"
+          id="aboutus-hero-image"
+        />
+
+        <div className="hero-content-container container">
+          <div className="hero-content">
+            <h1 className="main-heading white">Hållbarhetsarbete</h1>
+            <p>
+            På Gröna Tryck prioriterar vi hållbarhet i allt vi gör. Genom att använda ekologiska material och arbeta med certifierade leverantörer säkerställer vi att våra produkter är miljövänliga och etiskt producerade. Tillsammans strävar vi efter en grönare framtid.            </p>
+          </div>
+        </div>
+      </section>
+
+      
     <div className="sustainability-page-container container">
-      <div className="cart-heading">
-        <h1 className="main-heading">Hållbarhetsarbete</h1>
-      </div>
       <div className="sustainability-work">
        
         <section className="flex-section">
           <div className="flex main-body main-body-spacing">
-            <h1 className="section-heading heading-3">
+            <h2 className="section-heading heading-3 spacing-between">
               Hållbarhet hos Gröna tryck
-            </h1>
-            <h5 className="subheading-2">
+            </h2>
+            <h5 className="subheading-2 spacing-between">
               Vår passion för en giftfri och hållbar framtid.
             </h5>
             <p>
               På Gröna Tryck är hållbarhet alltid den främsta prioriteringen. Vi
               strävar ständigt efter att minimera vår miljöpåverkan och
-              säkerställa rättvisa arbetsvillkor genom hela produktionskedjan...
+              säkerställa rättvisa arbetsvillkor genom hela produktionskedjan...<br/>
               Här kan du läsa mer om hur vi uppnår detta genom noggrant utvalda
               material och certifieringar, samt genom våra trycktekniker som
               ligger i framkant.
             </p>
           </div>
 
-          <div className="main-body main-body-spacing">
-            <h1 className="section-heading heading-3">
+          <div className="main-body main-body-spacing ">
+            <h2 className="section-heading heading-3 spacing-between">
               Miljövänliga trycktekniker
-            </h1>
-            <h5 className="subheading-2">Pionjära inom ftalatfria färger</h5>
+            </h2>
+            <h5 className="subheading-2 spacing-between">Pionjära inom ftalatfria färger</h5>
             <p>
               Gröna Tryck var först i Sverige att standardisera ftalatfri
               screenfärg för alla våra tryck, redan 2009...
             </p>
-            <h3>Våra trycktekniker</h3>
+            <h3 className="spacing-between">Våra trycktekniker</h3>
             <ul>
               <li>
                 <strong>Screentryck:</strong> En klassisk metod, nu med
@@ -62,27 +78,15 @@ const SustainabilityWork = () => {
           </div>
         </section>
 
-        {/* <section className="membership-section">
-          <div className="margin">
-          <div className="brush-background-2"></div> 
-          <div className="membership-form">
-            <p className="membership-subheading main-body">
-              Vi gör en del av våra tryck själva, medan andra utförs via
-              noggrant utvalda samarbetspartners både i Sverige och utomlands.
-            </p>
-          </div>
-          </div>
-        </section> */}
-
         <section className="flex-section">
           <div className="main-body main-body-spacing">
-            <h1 className="section-heading heading-3">
+            <h2 className="section-heading heading-3 spacing-between">
               Hållbara material och produktion
-            </h1>
+            </h2>
             <p className="main-body-spacing">
               Vi arbetar med en rad olika hållbara material för att säkerställa
               att våra profilkläder och produkter lever upp till de högsta
-              miljökraven.
+              miljökraven. <br/><br/>
             </p>
 
             <div className="info-box-container">
@@ -114,21 +118,15 @@ const SustainabilityWork = () => {
                   snälla mot miljön.
                 </p>
               </div>
-              <div className="info-box">
-                <img
-                  src="./img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg"
-                  alt="Hållbara material"
-                />
-              </div>
             </div>
           </div>
         </section>
 
         <section className="flex-section">
           <div className="main-body main-body-spacing">
-            <h1 className="section-heading heading-3">
+            <h2 className="section-heading heading-3 spacing-between">
               Certifieringar och märkningar för en hållbar produktion
-            </h1>
+            </h2>
             <p>
               För att garantera att våra produkter är miljövänliga och rättvist
               producerade, arbetar vi endast med oberoende certifieringar och
@@ -148,9 +146,8 @@ const SustainabilityWork = () => {
 
               <div className="certification-item">
                 <div className="">
-                  <h3 className="eco">GRS</h3>
+                  <h3 className="eco">GRS (Global Recycle Standard)</h3>
                 </div>
-                <h5>(Global Recycle Standard)</h5>
                 <p>
                   Verifierar det återvunna innehållet i produkter och
                   säkerställer goda arbetsvillkor och minimal miljöpåverkan.
@@ -180,9 +177,8 @@ const SustainabilityWork = () => {
 
               <div className="certification-item">
                 <div className="">
-                  <h3 className="eco">GOTS</h3>
+                  <h3 className="eco">GOTS (Global Organic Textile Standard)</h3>
                 </div>
-                <h5>(Global Organic Textile Standard)</h5>
                 <p>
                   GOTS är en världsledande standard för kontroll av organiska
                   fibrer, där både ekologiska och sociala kriterier beaktas och
@@ -199,9 +195,9 @@ const SustainabilityWork = () => {
         <section>
           <div className="certifications-container main-body main-body-spacing">
             <div>
-              <h1 className="section-heading heading-3">
+              <h2 className="section-heading heading-3">
                 Ansvar för rättvisa arbetsvillkor
-              </h1>
+              </h2>
               <p className="main-body-spacing">
                 Vi arbetar inte bara för en hållbar miljö, utan också för
                 rättvisa arbetsvillkor. Våra produkter är tillverkade i fabriker
@@ -260,6 +256,7 @@ const SustainabilityWork = () => {
           </div>
         </section>
       </div>
+    </div>
     </div>
   );
 };

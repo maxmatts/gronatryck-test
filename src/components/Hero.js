@@ -20,8 +20,8 @@ export default function Hero() {
             Most Northern Official Stanley Stella Dealer
           </span> */}
           <div className="sustainability-container">
-            <h1 className="main-heading">Tryck med omtanke</h1>
-            <p className="main-body">– hållbarhet i varje detalj.</p>
+            <h1 className="main-heading white">Tryck med omtanke</h1>
+            <p className="main-body">– hållbarhet i varje detalj</p>
           </div>
           <p>
             Välkommen till Gröna Tryck – din pålitliga partner för hållbara och

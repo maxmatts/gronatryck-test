@@ -1,17 +1,13 @@
-
-
-
 .aboutus-page-container {
     
     margin: auto;
     margin-top: 2rem;
 }
 
-
 .about-text-containers {
     display: flex;
     flex-direction: column; 
-    margin: 2rem 0;
+    margin: 5rem 0;
     align-items: flex-start;
 }
 
@@ -51,6 +47,7 @@
     text-align: center; 
     margin-top: 1rem; 
 }
+
 .logo-container {
     display: flex;
     flex-wrap: wrap; 
@@ -62,16 +59,12 @@
     margin: 1rem; 
 }
 
-
-
 .hero-section-2 {
     position: relative;
     height: 50vh;
     overflow: hidden;
     color: #fafafa;
-  }
-
-  
+}
 
 .hero-image {
     width: 100%;
@@ -80,16 +73,9 @@
     object-position:center 15%; 
 }
 
-
 .text-container .section-heading{
     margin: 0;
 }
-
-
-
-
-
-
 
 
 @media (min-width: 768px) {
@@ -97,8 +83,6 @@
         flex-direction: row; 
         justify-content: space-between;
     }
-
-   
 
     .text-container {
         margin-right: 2rem; 
@@ -119,24 +103,21 @@
 
 @media(min-width:1200px){
 
-.img-container {
-        flex-direction: column; 
-        margin-top: 0;
-}
+    .img-container {
+            flex-direction: column; 
+            margin-top: 0;
+    }
 
-.about-img {
-    width: 20rem;
-         
-    margin-bottom: 0; 
-}
-
-
-
+    .about-img {
+        width: 20rem;
+            
+        margin-bottom: 0; 
+    }
 }
 
 
 
- @media(min-width:1500px){
+@media(min-width:1500px){
 
     .img-container {
           flex-direction: row; 
@@ -147,8 +128,5 @@
           width: 35rem;
            
           margin:10rem 0 0 0; 
-      }
-  
-
-    
-  } 
+      }  
+} 

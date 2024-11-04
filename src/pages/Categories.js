@@ -57,7 +57,7 @@ export default function Sortiment() {
     <div className="container" style={{ marginBlockStart: "10.8rem" }}>
       <div className="categori">
         <div className="nav-heading">
-          <h1 className="section-heading heading-3">Populära Kategori</h1>
+          <h1 className="section-heading heading-3">Populära Kategorier</h1>
         </div>
 
         <PopularCategories categoryList={categorylist} />

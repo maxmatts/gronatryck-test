@@ -9,13 +9,12 @@
   background-color: var(--white-color);
   box-shadow: 0px 2px 8px 0px rgba(55, 58, 33, 0.25);
   color: var(--primary-green);
-  .top-bar {
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-end;
-  }
 }
-
+.top-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
 .header-container {
   width: 90%;
   margin: auto;

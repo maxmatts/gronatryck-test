@@ -13,7 +13,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "Kan man bara beställa en produkt?",
-      answer: "Det går inte att beställa färre än 25st produkter då vi använder ett bulksystem för att dra ner priserna till våra företagskunder."
+      answer: "Det går inte att beställa färre än 10st produkter då vi använder ett bulksystem för att dra ner priserna till våra företagskunder."
     },
     {
       question: "Kan en privatperson beställa hos er?",
@@ -55,7 +55,7 @@ const FAQ = () => {
 
   return (
     <section className="faq-section" id="faq">
-      <h1 className="section-heading heading-3">FAQ</h1> 
+      <h2 className="section-heading heading-3">FAQ</h2> 
 
 
       {faqs.map((faq, index) => (

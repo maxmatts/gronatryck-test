@@ -313,7 +313,7 @@ function CartPage() {
           {/* Print Container */}
           <div className="print-container">
             <div className="cart-heading">
-              <h1 className="heading-3">Tryckalternativ:</h1>
+              <h2 className="heading-3">Tryckalternativ:</h2>
             </div>
             <div className="label-container">
               <label>
@@ -415,10 +415,10 @@ function CartPage() {
         </h5>
 
         <div className="cart-heading price-heading left">
-          <h1 className="heading-3">
+          <h2 className="heading-3">
             Totalt pris:{" "}
             {parseFloat(clothTotalPrice()) + parseFloat(totalPrintPrice())} SEK
-          </h1>
+          </h2>
         </div>
       </div>
 

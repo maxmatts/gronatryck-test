@@ -2,6 +2,13 @@
   width: 90%;
 }
 
+
+.title{
+  color: var(--primary-green);
+  font-size: var(--fontSizeLG);
+  font-weight: 500;
+}
+
 .product-gallery {
   overflow: hidden;
 }
@@ -17,28 +24,109 @@
   width: 100%;
 }
 
+
+.carousel-container {
+  position: relative;
+  overflow: hidden; 
+  margin: 1rem 0;
+}
+
 .thumbnail-images {
   display: flex;
   overflow-x: scroll;
-  overflow-y: hidden;
-  margin-right: 1rem;
+  overflow-y: hidden; 
   gap: 1rem;
+  scroll-behavior: smooth; 
+  padding-bottom: 1rem;
 }
+
 .thumbnail-image {
-  width: 200px;
+  width: 10rem;
   height: auto;
-  flex-shrink: 0;
+  flex-shrink: 0; 
   cursor: pointer;
-  transition: transform 500ms ease;
+  transition: transform 500ms ease; 
 }
+
 .thumbnail-image img {
-  border-radius: 6px;
-  margin: 1rem;
+  width: 100%; 
+  height: auto;
+  border-radius: 6px; 
 }
 
 .thumbnail-image:hover {
   transform: scale(1.1);
 }
+
+.carousel-arrow {
+  position: absolute; 
+  top: 50%; 
+  transform: translateY(-50%);
+  border: none;
+  
+  font-size: 2rem;
+ 
+  padding: 0.5rem;
+  cursor: pointer;
+  z-index: 2; 
+  border-radius: 50%; 
+}
+
+.carousel-arrow.left {
+  left: 1rem; 
+  color: black;
+}
+
+.carousel-arrow.right {
+  right: 1rem; 
+  color: black;
+}
+
+
+.thumbnail-images::-webkit-scrollbar {
+  height: 8px; 
+}
+
+.thumbnail-images::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+  border-radius: 6px; 
+}
+
+.thumbnail-images::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 6px; 
+}
+
+.thumbnail-images::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 .brand-name {
   font-size: var(--fontSizeXS);
@@ -53,6 +141,7 @@
 .product-description {
   font-size: var(--fontSizeXS);
   font-family: var(--bodyFont);
+  margin-top: 1rem;
 }
 
 .certificate-container {
@@ -69,7 +158,7 @@
 }
 
 .certificate-item img {
-  max-width: 3.5rem;
+  max-width: 10rem;
   height: auto;
   margin: 1.5rem 0;
 }
@@ -93,6 +182,8 @@
   border: 2px solid transparent;
   transition: transform 0.3s;
 }
+
+
 
 input[type="radio"]:checked + .color-circle {
   border: 2px solid #fff;
@@ -178,12 +269,16 @@ input[type="radio"]:checked + .color-circle {
 }
 
 .product-collapse td {
-  padding: 0 1rem 1rem 0;
+  padding: 1rem;
+  max-width: 55ch;
 }
 
 .remove-btn-2 {
   margin-left: 2rem;
   color: #d9534f;
+}
+.remove-btn-2:focus{
+  outline: 2px solid var(--primary-dark); 
 }
 
 .tabs {

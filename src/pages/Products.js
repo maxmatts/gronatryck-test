@@ -182,7 +182,7 @@ const Products = () => {
   return (
     <div className="product-page">
       <div className="heading-margin">
-        <h2 className="subheading-1">{title}</h2>
+        <h2 className="subheading-1 title">{title}</h2>
       </div>
 
       <div className="product-wrapper">

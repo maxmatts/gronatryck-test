@@ -14,18 +14,18 @@ const Login = ({ onLogin }) => {
   };
 
   const handleLoginClick = () => {
-    const loggedInUser = onLogin(user); // Call the prop function to log in
+    const loggedInUser = onLogin(user); 
 
     if (loggedInUser) {
       setError('');
-      // Store logged in user in localStorage
+     
       localStorage.setItem("loggedInUser", JSON.stringify(loggedInUser));
 
-      // Check if user is an admin
+    
       if (loggedInUser.role === 'Admin') {
-        navigate('/admin'); // Navigate to admin page
+        navigate('/admin'); 
       } else {
-        // Navigate back to the place user came from, or to home if no 'from' is set
+       
         const from = location.state?.from || "/";
         navigate(from);
       }

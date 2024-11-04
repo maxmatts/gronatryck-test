@@ -67,7 +67,7 @@
  
 
 .confirmation-heading{
-    margin-top: 10rem;
+   
     justify-content: center;
     text-align: center;
     align-items: center;
@@ -95,6 +95,11 @@
     margin: auto;
   }
 
+  .confirmation-container{
+   padding: 12rem;
+    justify-content: center;
+    align-items: center;
+  }
  
 
 

@@ -10,6 +10,7 @@ function Register({ onRegister }) {
     firstname: "",
     lastname: "",
     companyName: "",
+    phoneNumber:"",
     street: "",
     city: "",
     country: "",
@@ -28,8 +29,8 @@ function Register({ onRegister }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { email, password, firstname, lastname, street, city, country, zipcode } = user;
-    if (!email || !password || !firstname || !lastname || !street || !city || !country || !zipcode) {
+    const { email, password, firstname, lastname, phoneNumber ,street, city, country, zipcode } = user;
+    if (!email || !password || !firstname || !lastname || phoneNumber || !street || !city || !country || !zipcode) {
       alert("Vänligen fyll i alla obligatoriska fält.");
       return;
     }
@@ -95,6 +96,18 @@ function Register({ onRegister }) {
                     name="companyName"
                     placeholder="Företagsnamn (valfritt)"
                     value={user.companyName}
+                    onChange={handleChange}
+                  />
+                </div>
+
+                <div className="input-item wide">
+                  <h6 className="input-label">Telefonnummer</h6>
+                  <input
+                    className="input-phone"
+                    type="number"
+                    name="phoneNumber"
+                    placeholder="Telefonnummer"
+                    value={user.phoneNumber}
                     onChange={handleChange}
                   />
                 </div>

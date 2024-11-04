@@ -5,16 +5,44 @@ import "../styles/resell.css";
 const services = () => {
   return (
     <div>
-      <div className="resell-page">
-        <div className="cart-heading">
-          <h1 className="main-heading">Återförsäljare</h1>
+         <section className="hero-section-2">
+        <img
+          src="/img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          alt="Hero"
+          className="hero-image"
+          id="aboutus-hero-image"
+        />
+
+        <div className="hero-content-container container">
+          <div className="hero-content">
+            <h1 className="main-heading white">Återförsäljare</h1>
+            <p>
+            Vill du vara en del av vår resa mot en hållbar framtid? Som återförsäljare av Gröna Trycks produkter får du tillgång till ett brett sortiment av ekologiska och miljövänliga kläder. Tillsammans kan vi erbjuda dina kunder stilrena och hållbara val. Kontakta oss för att diskutera samarbetsmöjligheter!            </p>
+          </div>
         </div>
+      </section>
+
+
+
+      <div className="resell-page">
+
+
+
+
+
+
+
+
+
+
+
+       
 
         <div className="resell-page-container">
           <div className="resell-container">
-            <h1 className="section-heading heading-3 resell-heading">
+            <h2 className="section-heading heading-3 resell-heading">
               Bli Återförsäljare med Gröna Tryck
-            </h1>
+            </h2>
             <p className="main-body resell-text-container">
               Söker du en pålitlig partner för profilprodukter som kan stärka
               ditt varumärke? På Gröna Tryck erbjuder vi ett brett utbud av

@@ -1,15 +1,32 @@
-import React, { useState } from "react";
-import "../styles/chat.css"; // Se till att CSS-filen finns för att styla chatten
-import { LuMessageCircle } from "react-icons/lu"; // Importera ikonen för chatten
+import React, { useState, useRef, useEffect } from "react";
+import "../styles/chat.css"; 
+import { LuMessageCircle } from "react-icons/lu"; 
 
 const Chat = () => {
-  // useState-hooken för att hålla koll på chattsynlighet
-  const [isVisible, setIsVisible] = useState(false); // Initialt är chatten dold
+  const [isVisible, setIsVisible] = useState(false); 
+  const chatRef = useRef(null); 
 
   // Funktion för att växla mellan att visa och dölja chatten
   const toggleChat = () => {
     setIsVisible(!isVisible); // Byter till synlig eller dold status
   };
+
+  // Stänger chatten när användaren klickar utanför den
+  const handleClickOutside = (event) => {
+    if (chatRef.current && !chatRef.current.contains(event.target)) {
+      setIsVisible(false);
+    }
+  };
+
+  useEffect(() => {
+    // Lägg till event listener för klick utanför chatten
+    document.addEventListener("mousedown", handleClickOutside);
+    
+    // Rensa event listener när komponenten avmonteras
+    return () => {
+      document.removeEventListener("mousedown", handleClickOutside);
+    };
+  }, []);
 
   return (
     <div className="chat-container">
@@ -26,7 +43,7 @@ const Chat = () => {
       )}
 
       {isVisible && (
-        <div className="chat-window">
+        <div className="chat-window" ref={chatRef}>
           {/* Header för chatten */}
           <div className="chat-header">
             <div>
@@ -53,7 +70,6 @@ const Chat = () => {
             {/* Fler meddelanden kan läggas till här */}
           </div>
 
-          {/* Footer för att skriva meddelanden */}
           <div className="chat-footer">
             <input type="text" placeholder="Skriv ditt meddelande här.." />{" "}
             {/* Textfält för att skriva meddelanden */}
@@ -66,3 +82,4 @@ const Chat = () => {
 };
 
 export default Chat;
+

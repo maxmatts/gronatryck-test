@@ -22,7 +22,7 @@ const Stanley = () => {
         />
         <div className="hero-content-container container">
           <div className="hero-content">
-            <h1 className="main-heading">Stanley Stella</h1>
+            <h1 className="main-heading hide white">Stanley Stella</h1>
             <p>
               Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
               erbjuda kläder som kombinerar stil, kvalitet och hållbarhet. Sedan
@@ -40,13 +40,13 @@ const Stanley = () => {
         </div>
       </section>
 
-      <div id="stanley-section" className="stanley">
+      <section id="stanley-section" className="stanley" aria-labelledby="stanley-titel">
         <div id="stanley-container" className="stanley-container">
           <div className="stanley-text-container">
             <div className="text-container main-body">
-              <h1 className="section-heading heading-3">
+              <h2 id="stanley-titel" className="section-heading heading-3">
                 Hållbara Kläder i Toppklass
-              </h1>
+              </h2>
               <p className="main-body">
                 Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
                 erbjuda kläder som kombinerar stil, kvalitet och hållbarhet.
@@ -88,9 +88,9 @@ const Stanley = () => {
           </div>
 
           <section className="gallery-section stanley-container">
-            <h1 className="section-heading heading-3 stanley-heading">
+            <h2 className="section-heading heading-3 stanley-heading">
               Populära Produkter
-            </h1>
+            </h2>
 
             <div className="carousel-container">
               <button
@@ -144,7 +144,7 @@ const Stanley = () => {
             </div>
           </section>
         </div>
-      </div>
+      </section>
     </div>
   );
 };

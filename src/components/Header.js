@@ -46,7 +46,7 @@ export default function Header() {
   }
 
   return (
-    <header className="page-header">
+    <header className="page-header" role="banner">
       {" "}
       {/* Header-element */}
       <SearchBar handleClick={cancelSearch} isActive={searchActive} />{" "}
@@ -66,7 +66,7 @@ export default function Header() {
             alt="brand logotype" // Alt-text för logotyp
           />
         </Link>
-        <nav>
+        <nav role="navigation">
           <NavList key="desktop-menu" links={navLinks} className="desktop" />{" "}
           {/* Desktopmeny */}
         </nav>
@@ -130,7 +130,7 @@ export default function Header() {
 
           <HamburgerMenu active={mobileMenuActive} onClick={toggleMenu} />
         </div>
-        <div className={`mobile-menu-2 ${mobileMenuActive ? "active" : ""}`}>
+        <div className={`mobile-menu-2 ${mobileMenuActive ? "active" : ""}`} role="navigation">
           {" "}
           {/* Mobilmeny */}
           <NavList

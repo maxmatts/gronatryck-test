@@ -57,7 +57,7 @@ export default function Sortiment() {
         />{" "}
         {/* Renderar navigationslistan */}
         <div className="nav-heading">
-          <h1 className="section-heading heading-3">Populära Kategori</h1>
+          <h2 className="section-heading heading-3">Populära Kategorier</h2>
           {/* Rubrik för sektionen med populära kategorier */}
         </div>
         <PopularCategories grid="true" categoryList={categorylist} />

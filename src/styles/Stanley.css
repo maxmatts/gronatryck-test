@@ -16,6 +16,7 @@ html {
     max-width: 1300px; 
     margin: auto; 
     margin-bottom: 10rem;
+    
 }
 
 .stanley-text-container {
@@ -24,6 +25,10 @@ html {
     width: 100%; 
     margin: auto;
     margin-top: 2rem;
+}
+
+.hide{
+    display: none;
 }
 
 .text-container {
@@ -137,8 +142,11 @@ html {
 }
 
 @media (min-width: 768px) {
-    .stanley {
-        width: 80%;
+
+   
+
+    .hide{
+        display: block;
     }
 
     .stanley-text-container {
@@ -167,9 +175,7 @@ html {
 }
 
 @media (min-width: 1005px) {
-    .stanley {
-        width: 70%;
-    }
+   
 
     .stanley-text-container {
         margin: 5rem 0;
