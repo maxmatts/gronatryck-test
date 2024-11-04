@@ -30,7 +30,7 @@ function Register({ onRegister }) {
     e.preventDefault();
 
     const { email, password, firstname, lastname, phoneNumber ,street, city, country, zipcode } = user;
-    if (!email || !password || !firstname || !lastname || phoneNumber || !street || !city || !country || !zipcode) {
+    if (!email || !password || !firstname || !lastname || !phoneNumber || !street || !city || !country || !zipcode) {
       alert("Vänligen fyll i alla obligatoriska fält.");
       return;
     }
@@ -89,7 +89,7 @@ function Register({ onRegister }) {
                 </div>
 
                 <div className="input-item wide">
-                  <h6 className="input-label">Företagsnamn (valfritt)</h6>
+                  <h6 className="input-label">Företagsnamn (valfritt) </h6>
                   <input
                     className="input-login"
                     type="text"
@@ -100,17 +100,18 @@ function Register({ onRegister }) {
                   />
                 </div>
 
-                <div className="input-item wide">
-                  <h6 className="input-label">Telefonnummer</h6>
+                 <div className="input-item wide">
+                  <h6 className="input-label">Telefonnummer* </h6>
                   <input
-                    className="input-phone"
-                    type="number"
+                    className="input-login"
+                    type="text"
                     name="phoneNumber"
                     placeholder="Telefonnummer"
                     value={user.phoneNumber}
                     onChange={handleChange}
+                    required
                   />
-                </div>
+                </div> 
 
                 <div className="input-item">
                   <h6 className="input-label">Email*</h6>

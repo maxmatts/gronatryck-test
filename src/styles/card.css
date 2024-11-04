@@ -8,9 +8,9 @@
 }
 
 .card {
-  flex: 1 1 calc(50% - 1rem); /* Adjust this for the number of cards per row */
-  max-width: 300px; /* Limit max width */
-  box-sizing: border-box; /* Ensures padding and margin are included in width */
+  flex: 1 1 calc(100% - 1rem); 
+  max-width: 300px; 
+  box-sizing: border-box;
   border-radius: 0.6rem;
   overflow: hidden;
   margin: 0;
@@ -93,14 +93,18 @@
   opacity: 0;
 }
 
-@media (min-width: 768px) {
-  .card {
-    flex: 1 1 calc(30% - 1rem); /* 3 cards on medium screens */
-  }
+.product-wrapper .subheading-1{
+  margin: 0;
 }
 
 @media (min-width: 768px) {
   .card {
-    flex: 1 1 calc(25% - 1rem); /* 3 cards on medium screens */
+    flex: 1 1 calc(30% - 1rem); 
+  }
+}
+
+@media (min-width: 1005px) {
+  .card {
+    flex: 1 1 calc(50% - 1rem); 
   }
 }

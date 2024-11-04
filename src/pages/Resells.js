@@ -17,8 +17,8 @@ const services = () => {
           <div className="hero-content">
             <h1 className="main-heading white">Återförsäljare</h1>
             <p>
-            Vill du vara en del av vår resa mot en hållbar framtid? Som återförsäljare av Gröna Trycks produkter får du tillgång till ett brett sortiment av ekologiska och miljövänliga kläder. Tillsammans kan vi erbjuda dina kunder stilrena och hållbara val. Kontakta oss för att diskutera samarbetsmöjligheter!            </p>
-          </div>
+            Vill du samarbeta med oss för att främja hållbara val? Kontakta oss för att diskutera hur dina kläder och artiklar kan bli en del av vårt sortiment av ekologiska och miljövänliga produkter. Tillsammans kan vi göra skillnad!            </p>
+            </div>
         </div>
       </section>
 

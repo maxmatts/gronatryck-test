@@ -1,7 +1,8 @@
 .cases-container {
-    padding: 2rem;
+    
     max-width: 1000px; 
     margin: auto; 
+    width: 90%;
 }
 
 .case-section {
@@ -27,7 +28,7 @@
 
 .case-text {
     width: 100%; 
-    padding: 0 1rem; 
+    
 }
 
 .case-heading {
@@ -46,6 +47,7 @@
         flex-direction: row; 
         justify-content: space-between; 
         width: 100%; 
+        align-items: flex-start;
     }
 
     .case-section.reverse {

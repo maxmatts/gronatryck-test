@@ -8,7 +8,7 @@ const Cases = () => {
         <div className="cases-container">
 
 <div className="cart-heading">
-        <h1 className="main-heading page-heading spacing-between">Kundberättelser</h1>
+        <h1 className="main-heading page-heading spacing-between">Kund<wbr></wbr>berättelser</h1>
       </div>
             
             

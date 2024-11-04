@@ -22,7 +22,7 @@ const Stanley = () => {
         />
         <div className="hero-content-container container">
           <div className="hero-content">
-            <h1 className="main-heading hide white">Stanley Stella</h1>
+            <h1 className="main-heading  white">Stanley Stella</h1>
             <p>
               Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
               erbjuda kläder som kombinerar stil, kvalitet och hållbarhet. Sedan

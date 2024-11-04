@@ -14,6 +14,8 @@
   .faq-item h2{
     font-size: 2rem;
     font-weight: 600;
+    cursor: pointer;
+    transition: opacity 0.3s ease;
   }
 
   .section-heading {
@@ -26,7 +28,17 @@
     border-bottom: 1px solid #ddd;
     padding: 1.5rem 0; 
   }
+  .faq-item h2::after {
+    content: '▸'; /* A simple right arrow */
+    display: inline-block;
+    margin-left: 0.3rem; /* Reduce the margin for a cleaner look */
+    font-size: 2rem; /* Make the icon smaller */
+    transition: transform 0.3s ease;
+  }
   
+  .faq-item h2.active::after {
+    transform: rotate(90deg); /* Rotates the arrow to point downwards when active */
+  }
   
 
   

@@ -58,7 +58,7 @@
   display: flex;
   justify-content: space-between;
 
-  border: 2px solid var(--primary-green);
+  border: 2px solid var(--autumn-color);;
   padding: 1rem 1.5rem;
 
   color: #333;
@@ -241,7 +241,7 @@
     flex-direction: row;
     gap: 2rem; 
     text-align: center;
-    align-items: center; /* Changed to center to align items vertically */
+    align-items: center; 
     margin: auto;
     margin-top: 2rem;
   }
@@ -256,9 +256,9 @@
     padding: 1rem 0.5rem;
     min-width: 120px; 
     max-width: 200px; 
-    flex-shrink: 0; /* Prevents the button from shrinking */
-    margin-left: 2rem; /* Keep margin for spacing */
-    align-self: center; /* Align button in the center of its row */
+    flex-shrink: 0; 
+    margin-left: 2rem;
+    align-self: center; 
   }
 
   .filter-group {

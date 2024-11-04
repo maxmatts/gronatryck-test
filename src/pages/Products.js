@@ -181,12 +181,14 @@ const Products = () => {
 
   return (
     <div className="product-page">
-      <div className="heading-margin">
-        <h2 className="subheading-1 title">{title}</h2>
-      </div>
+      
 
       <div className="product-wrapper">
+      <div className="heading-margin">
+        <h2 className="subheading-1 title">{title}</h2>
         <Breadcrumb />
+      </div>
+       
         <div className="filter-wrapper">
           <button
             className="filter-toggle-btn"

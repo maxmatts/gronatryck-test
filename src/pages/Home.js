@@ -48,7 +48,7 @@ const Home = () => {
               <div className="eco-label"></div>
 
               <div className="eco-text-container">
-                <p className="main-body margin">
+                <p className="main-body">
                   Vår passion för miljön och rättvisa genomsyrar allt vi gör –
                   från att erbjuda hållbara och rättvisemärkta textilier till
                   att säkerställa att våra kunder får genomtänkta och hållbara
@@ -80,7 +80,7 @@ const Home = () => {
 
         {/* Section 5: Beställningsprocess */}
         <section className="order-process">
-          <h2 className="section-heading heading-3">Beställningsprocess</h2>
+          <h2 className="section-heading heading-3">Beställnings<wbr></wbr>process</h2>
           <div className="process-steps main-body">
             {[
               {

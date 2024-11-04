@@ -35,9 +35,9 @@
 }
 
 .about-img {
-    width: 20rem;
-    height: 20rem;
-    max-width: 20rem; 
+    width: 15rem;
+    height: 15rem;
+   
     border-radius: 50%;
     overflow: hidden;
     object-fit: cover; 
@@ -61,7 +61,7 @@
 
 .hero-section-2 {
     position: relative;
-    height: 50vh;
+    height: 60vh;
     overflow: hidden;
     color: #fafafa;
 }
@@ -84,6 +84,12 @@
         justify-content: space-between;
     }
 
+    .hero-section-2 {
+        
+        height: 50vh;
+        
+    }
+
     .text-container {
         margin-right: 2rem; 
         padding-right: 1.5rem;
@@ -96,7 +102,7 @@
 
     .about-img {
         width: 25rem;
-
+        height: 25rem;
         margin-bottom: 0; 
     }
 }
