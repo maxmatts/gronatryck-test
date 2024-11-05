@@ -143,7 +143,7 @@
 
 
 .sustainability-page-container {
-    padding: 2rem;
+    padding: 2rem 0;
     line-height: 1.6;
 }
 
@@ -245,6 +245,14 @@
     transition: box-shadow 0.3s;
     max-width: 200px;
 }
+.certification-item p {
+    font-size: 1.2rem;
+}
+
+.certification-item-2 p {
+    font-size: 1.2rem;
+
+}
 
 .certification-item:hover {
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
@@ -258,7 +266,7 @@
 
 /* Sekundär certifieringsitem */
 .certification-item-2 {
-    background-color: #f0f4f8;
+    background-color: #fff;
     border: 1px solid #ccc;
     border-radius: 6px;
     padding: 2rem;
@@ -275,7 +283,7 @@
 .certification-item-2 img {
     width: 100%;
     border-radius: 6px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .flex {

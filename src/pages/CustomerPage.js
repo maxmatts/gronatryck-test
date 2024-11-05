@@ -125,7 +125,7 @@ function EditProfile() {
           <input
             type="text"
             name="firstName"
-            value={userDetails.firstName || ""}
+            value={userDetails.firstname || ""}
             onChange={handleInputChange}
           />
         </label>
@@ -134,7 +134,7 @@ function EditProfile() {
           <input
             type="text"
             name="lastName"
-            value={userDetails.lastName || ""}
+            value={userDetails.lastname || ""}
             onChange={handleInputChange}
           />
         </label>
@@ -161,7 +161,7 @@ function EditProfile() {
           <input
             type="text"
             name="address"
-            value={userDetails.address || ""}
+            value={userDetails.street || ""}
             onChange={handleInputChange}
           />
         </label>
@@ -179,7 +179,7 @@ function EditProfile() {
           <input
             type="text"
             name="postalCode"
-            value={userDetails.postalCode || ""}
+            value={userDetails.zipcode || ""}
             onChange={handleInputChange}
           />
         </label>

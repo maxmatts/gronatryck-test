@@ -83,7 +83,7 @@ const AboutUs = () => {
               <div className="img-wrapper">
                 <img
                   className="about-img"
-                  src="./img/decorative/alano-oliveira-3UknV3EZVBs-unsplash.jpg"
+                  src="/img/decorative/alano-oliveira-3UknV3EZVBs-unsplash.jpg"
                   alt="Fejk bild på Josef"
                 />
                 <h2 className="section-heading heading-3 stanley-heading">
@@ -97,67 +97,67 @@ const AboutUs = () => {
             <div className="logo-container">
               {/* Partner-logos */}
               <img
-                src="./img/certificates/partners/atlantis-green-collection-logo-grona-tryck-2 2.png"
+                src="/img/certificates/partners/atlantis-green-collection-logo-grona-tryck-2 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/dedicated-logo-grona-tryck-2 2.png"
+                src="/img/certificates/partners/dedicated-logo-grona-tryck-2 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/ecovero-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/ecovero-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/knowledge-cotton-apparel-logo-grona-tryck-2 2.png"
+                src="/img/certificates/partners/knowledge-cotton-apparel-logo-grona-tryck-2 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/langbrett-logo-2048x844 2.png"
+                src="/img/certificates/partners/langbrett-logo-2048x844 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/mantis-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/mantis-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/neoblu-logo-2048x844 2.png"
+                src="/img/certificates/partners/neoblu-logo-2048x844 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/regatta-honestly-made-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/regatta-honestly-made-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/result-genuine-recycled-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/result-genuine-recycled-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/royk-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/royk-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/russel-pure-organic-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/russel-pure-organic-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/salvage-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/salvage-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/stst-logo-grona-tryck-2023 2.png"
+                src="/img/certificates/partners/stst-logo-grona-tryck-2023 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/tiger-logo-2048x844 2.png"
+                src="/img/certificates/partners/tiger-logo-2048x844 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/xd-logo-2048x844 2.png"
+                src="/img/certificates/partners/xd-logo-2048x844 2.png"
                 alt="Partner Logo"
               />
               <img
-                src="./img/certificates/partners/neutral-logo-grona-tryck 2.png"
+                src="/img/certificates/partners/neutral-logo-grona-tryck 2.png"
                 alt="Partner Logo"
               />
             </div>

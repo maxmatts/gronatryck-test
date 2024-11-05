@@ -16,7 +16,7 @@ const SustainabilityWork = () => {
           <div className="hero-content">
             <h1 className="main-heading white">Hållbarhetsarbete</h1>
             <p>
-            På Gröna Tryck prioriterar vi hållbarhet i allt vi gör. Genom att använda ekologiska material och arbeta med certifierade leverantörer säkerställer vi att våra produkter är miljövänliga och etiskt producerade. Tillsammans strävar vi efter en grönare framtid.            </p>
+            På Gröna Tryck prioriterar vi hållbarhet i allt vi gör. Genom att använda ekologiska material och arbeta med certifierade leverantörer säkerställer vi att våra produkter är miljövänliga och etiskt producerade.</p>
           </div>
         </div>
       </section>
@@ -139,7 +139,7 @@ const SustainabilityWork = () => {
                   <h3 className="eco">EU Ecolabel</h3>
                 </div>
                 <p>
-                  Garanterar att produkterna har minimal påverkan på miljön
+                  <br/>Garanterar att produkterna har minimal påverkan på miljön
                   under hela livscykeln.
                 </p>
               </div>
@@ -149,7 +149,7 @@ const SustainabilityWork = () => {
                   <h3 className="eco">GRS (Global Recycle Standard)</h3>
                 </div>
                 <p>
-                  Verifierar det återvunna innehållet i produkter och
+                <br/>Verifierar det återvunna innehållet i produkter och
                   säkerställer goda arbetsvillkor och minimal miljöpåverkan.
                 </p>
               </div>
@@ -159,7 +159,7 @@ const SustainabilityWork = () => {
                   <h3 className="eco">Fairtrade</h3>
                 </div>
                 <p>
-                  Säkerställer att bomullen i våra produkter har producerats
+                <br/>Säkerställer att bomullen i våra produkter har producerats
                   till ett rättvist pris och under goda arbetsvillkor.
                 </p>
               </div>
@@ -169,7 +169,7 @@ const SustainabilityWork = () => {
                   <h3 className="eco">Bluesign</h3>
                 </div>
                 <p>
-                  Kontrollerar varje steg i produktionskedjan för att minimera
+                <br/>Kontrollerar varje steg i produktionskedjan för att minimera
                   användningen av skadliga kemikalier och säkerställa att
                   slutprodukten är säker och hållbar.
                 </p>
@@ -180,7 +180,7 @@ const SustainabilityWork = () => {
                   <h3 className="eco">GOTS (Global Organic Textile Standard)</h3>
                 </div>
                 <p>
-                  GOTS är en världsledande standard för kontroll av organiska
+                  <br/>GOTS är en världsledande standard för kontroll av organiska
                   fibrer, där både ekologiska och sociala kriterier beaktas och
                   granskas av oberoende tredjepartscertifiering genom hela
                   textilförsörjningskedjan. Detta innebär att alla steg – från
@@ -214,7 +214,7 @@ const SustainabilityWork = () => {
                 />
                 <h3>Fair Wear Foundation (FWF):</h3>
                 <p>
-                  Arbetar för att förbättra arbetsvillkoren inom textilindustrin
+                <br/>Arbetar för att förbättra arbetsvillkoren inom textilindustrin
                   globalt.
                 </p>
               </div>
@@ -227,7 +227,7 @@ const SustainabilityWork = () => {
                 />
                 <h3>Amfori BSCI:</h3>
                 <p>
-                  Ett internationellt kontrollsystem som säkerställer goda
+                <br/>Ett internationellt kontrollsystem som säkerställer goda
                   arbetsförhållanden och transparens i leverantörskedjan.
                 </p>
               </div>

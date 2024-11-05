@@ -25,9 +25,7 @@ const Stanley = () => {
             <h1 className="main-heading  white">Stanley Stella</h1>
             <p>
               Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att
-              erbjuda kläder som kombinerar stil, kvalitet och hållbarhet. Sedan
-              2021 är vi stolta över att vara “Most Northern” Official Dealer
-              och Selected Dealer Outerwear
+              erbjuda kläder som kombinerar stil, kvalitet och hållbarhet.
             </p>
             <div style={{ display: "flex", gap: "1.6rem" }}>
               <Button

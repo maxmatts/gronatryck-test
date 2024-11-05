@@ -22,12 +22,17 @@ function CartPage() {
   const handleGlobalCommentChange = (e) => setGlobalComment(e.target.value);
 
   const handleQuantityChange = (item, quantity) => {
-    if (quantity <= 0) {
-      removeFromCart(item.productId, item.selectedColor, item.size);
-    } else {
-      updateCartItem(item.productId, item.selectedColor, item.size, quantity);
+    // Ensure the quantity doesn't go below 1 when decrementing
+    if (quantity < 1) {
+        return; // Do nothing if quantity is less than 1
     }
-  };
+    
+    if (quantity === 0) {
+        removeFromCart(item.productId, item.selectedColor, item.size);
+    } else {
+        updateCartItem(item.productId, item.selectedColor, item.size, quantity);
+    }
+};
 
   const getProductDetails = (productId) => {
     return products.find((product) => product.productId === productId) || {};

@@ -803,7 +803,7 @@ const products = [
     name: "Mjuk Piké",
     artName: "StSt Eco 222, Prepster",
     artNr: "2571",
-    category: "Pikéer",
+    category: "Pikeer",
     description: `Förtvättad piké av 100% ekologisk bomull, ringspunnen och kammad i pikétyg. Passformen är Unisex och gjord för att passa många olika kroppsformer.\n\nFairwear gör årliga stickprovskontroller på fabriker för att kontrollera medlemmarnas redovisningar och varje fabrik måste sätta upp uppförandekod på det lokala språket med kontaktuppgifter till en oberoende klagomålshanterare.`,
     sizeVariants: [
       "XXS",

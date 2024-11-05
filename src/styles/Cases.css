@@ -8,7 +8,7 @@
 .case-section {
     display: flex;
     align-items: center; 
-    margin-bottom: 2rem; 
+    margin-bottom: 4rem; 
     flex-direction: column; 
     width: 100%; 
     text-align: left; 
@@ -37,6 +37,9 @@
     color: var(--primary-green); 
 }
 
+.cart-heading .main-heading{
+    margin-bottom: 5rem;
+}
 .case-description {
     font-size: var(--fontSizeXS); 
     color: #333; 

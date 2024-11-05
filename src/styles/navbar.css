@@ -8,6 +8,7 @@
 }
 .categories {
   display: grid;
+  width: 100%;
 }
 .nav-link {
   display: block;

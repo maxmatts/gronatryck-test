@@ -43,7 +43,7 @@
   position: relative;
   font-size: 2rem;
   margin-bottom: 1rem;
-  font-weight: bold;
+  font-weight: 500;
 }
 
 summary::after {
@@ -77,10 +77,23 @@ details[open] summary::after {
   margin-bottom: 1rem;
 }
 
-.footer-links details img {
+/* .footer-links details img {
+  width: 2rem;
+  height: auto;
+  
+} */
+
+.footer-icon{
   width: 2rem;
   height: auto;
 }
+
+.footer-icon-2{
+  width: auto;
+  height: 2rem;
+
+}
+
 
 .footer-links details a {
   color: var(--primary-dark);
@@ -107,7 +120,7 @@ details[open] summary::after {
 
 .icon {
   cursor: pointer;
-  width: 2rem;
+  width: 4rem;
 }
 
 
@@ -178,7 +191,7 @@ details[open] summary::after {
   }
 
   .footer-column h4 {
-    font-weight: bold;
+    font-weight: 500;
     margin-bottom: 1rem;
     color: var(--primary-dark);
   }

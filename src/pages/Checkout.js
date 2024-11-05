@@ -17,6 +17,8 @@ function Checkout() {
 
   const [customerInfo, setCustomerInfo] = useState(loggedInUser || {});
 
+
+  
   const handleChange = (e) => {
     const { name, value } = e.target;
     setCustomerInfo({ ...customerInfo, [name]: value });
@@ -54,7 +56,7 @@ function Checkout() {
       </div>
       {loggedInUser ? (
         <>
-          <h2 className='heading-3'>Kundinformation</h2>
+          <h2 className='heading-3 '>Kundinformation</h2>
 
           <form>
             <div className="input-container">
@@ -63,7 +65,7 @@ function Checkout() {
                 className='input-login'
                 type="text"
                 name="personName"
-                value={`${customerInfo.firstName} ${customerInfo.lastName}`}
+                value={`${customerInfo.firstname} ${customerInfo.lastname}`}
                 onChange={handleChange}
                 placeholder="För & Efternamn"
                 required
@@ -100,7 +102,7 @@ function Checkout() {
                 className='input-login'
                 type="text"
                 name="phone"
-                value={customerInfo.phone || ''}
+                value={customerInfo.phoneNumber || ''}
                 onChange={handleChange}
                 placeholder="Telefon"
               />
@@ -119,17 +121,10 @@ function Checkout() {
               />
             </div>
 
-            <div className="input-container">
-              <h6 className='input-label'>Organisationsnummer:</h6>
-              <input
-                className='input-login'
-                type="text"
-                name="organizationNumber"
-                value={customerInfo.organizationNumber || ''}
-                onChange={handleChange}
-                placeholder="Organisationsnummer"
-              />
-            </div>
+          
+
+
+
           </form>
 
           <Quote customer={customerInfo} cartItems={cartItems} totalCost={totalCost} />

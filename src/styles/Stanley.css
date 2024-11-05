@@ -181,10 +181,17 @@ html {
         margin: 5rem 0;
     }
 
+    .stanley-container{
+        width: 90%;
+    }
     .text-container {
         display: flex; 
         flex-direction: column; 
         justify-content: flex-start; 
+    }
+
+    .gallery-section{
+        width: 100%;
     }
 
     .img-container {

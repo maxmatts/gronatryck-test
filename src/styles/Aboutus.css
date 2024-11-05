@@ -1,5 +1,4 @@
 .aboutus-page-container {
-    
     margin: auto;
     margin-top: 2rem;
 }
@@ -35,12 +34,12 @@
 }
 
 .about-img {
-    width: 15rem;
-    height: 15rem;
-   
+    width: 10rem;
+    height: 10rem;
     border-radius: 50%;
     overflow: hidden;
-    object-fit: cover; 
+    object-fit: cover;
+    max-width: fit-content; 
 }
 
 .stanley-heading {
@@ -62,6 +61,7 @@
 .hero-section-2 {
     position: relative;
     height: 60vh;
+    min-height: 65vh;
     overflow: hidden;
     color: #fafafa;
 }
@@ -116,7 +116,7 @@
 
     .about-img {
         width: 20rem;
-            
+        height: 20rem;
         margin-bottom: 0; 
     }
 }
@@ -132,7 +132,7 @@
   
       .about-img {
           width: 35rem;
-           
+        height: 35rem;
           margin:10rem 0 0 0; 
       }  
 } 

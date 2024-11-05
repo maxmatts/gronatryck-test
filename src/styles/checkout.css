@@ -57,7 +57,9 @@
     margin-top: .5rem;
   }
   
-  
+  .checkout-container .heading-3{
+    font-size: 3rem;
+  }
   
   .detail-label {
     font-weight: 500;

@@ -27,7 +27,7 @@
 
 .hero-content-container {
   z-index: 1;
-  padding-block-end: 5.8rem;
+  padding-block-end: 2rem;
   height: 100%;
   display: flex;
   justify-content: flex-start;

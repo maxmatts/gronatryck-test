@@ -44,6 +44,11 @@
     }
   }
 }
+
+/* .dropdown-list h2{
+  margin-left: 2rem;
+} */
+
 .search-items-wrapper {
   display: grid;
   gap: 2rem;
@@ -58,7 +63,7 @@
   display: flex;
   justify-content: space-between;
 
-  border: 2px solid var(--autumn-color);;
+  border: 2px solid var(--primary-green);;
   padding: 1rem 1.5rem;
 
   color: #333;

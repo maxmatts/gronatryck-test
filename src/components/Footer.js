@@ -12,15 +12,15 @@ const Footer = () => {
             <summary>Kontakt</summary> {/* Utvecklingsbart avsnitt för kontaktinformation */}
             <div className="footer-text-container">
               <p>
-                <img src="./img/decorative/icons/phone_line_icon.png" alt="Telefonikon" /> {/* Telefonikon */}
+                {/* <img className="footer-icon" src="/img/decorative/icons/phone_icon.svg" alt="Telefonikon" /> Telefonikon */}
                 Tel: <a href="tel:+4690131340">+46 (0)90 13 13 40</a> {/* Länk för att ringa */}
               </p>
               <p>
-                <img src="./img/decorative/icons/mail_icon.svg" alt="Mailikon" /> {/* Mailikon */}
+                {/* <img className="footer-icon" src="/img/decorative/icons/mail_icon.svg" alt="Mailikon" /> Mailikon */}
                 Email: <a href="mailto:kontakt@gronatryck.se">kontakt@gronatryck.se</a> {/* Länk för att skicka e-post */}
               </p>
               <p>
-                <img src="./img/decorative/icons/location_icon.svg" alt="Platsikon" /> {/* Platsikon */}
+                {/* <img className="footer-icon-2"src="/img/decorative/icons/location_icon.svg" alt="Platsikon" /> Platsikon */}
                 Adress: Västra Kyrkogatan 1B, 903 29 Umeå, Sverige {/* Adressinformation */}
               </p>
             </div>
@@ -44,28 +44,28 @@ const Footer = () => {
               target="_blank"
               rel="noreferrer"
             >
-              <img className="icon" src="/img/decorative/icons/fb_icon.svg" alt="Facebook-ikon" /> {/* Facebook-ikon */}
+              <img className="icon" src="/img/decorative/icons/fb_icon_inverted.svg" alt="Facebook-ikon" /> {/* Facebook-ikon */}
             </a>
             <a
               href="https://www.linkedin.com/company/gronatryck/"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="icon" src="/img/decorative/icons/li_icon.svg" alt="LinkedIn-ikon" /> {/* LinkedIn-ikon */}
+              <img className="icon" src="/img/decorative/icons/li_icon_inverted.svg" alt="LinkedIn-ikon" /> {/* LinkedIn-ikon */}
             </a>
             <a
               href="https://www.youtube.com/@gronatryck508"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="icon" src="/img/decorative/icons/yt_icon.svg" alt="YouTube-ikon" /> {/* YouTube-ikon */}
+              <img className="icon" src="/img/decorative/icons/yt_icon_inverted.svg" alt="YouTube-ikon" /> {/* YouTube-ikon */}
             </a>
             <a
               href="https://www.instagram.com/gronatryck/"
               target="_blank"
               rel="noreferrer"
             >
-              <img className="icon" src="/img/decorative/icons/ig_icon.svg" alt="Instagram-ikon" /> {/* Instagram-ikon */}
+              <img className="icon" src="/img/decorative/icons/ig_icon_inverted.svg" alt="Instagram-ikon" /> {/* Instagram-ikon */}
             </a>
           </div>
         </div>
@@ -108,28 +108,28 @@ const Footer = () => {
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="icon" src="/img/decorative/icons/fb_line_icon.png" alt="Facebook-ikon" /> {/* Facebook-ikon */}
+                <img className="icon" src="/img/decorative/icons/fb_icon_inverted.svg" alt="Facebook-ikon" /> {/* Facebook-ikon */}
               </a>
               <a
                 href="https://www.linkedin.com/company/gronatryck/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="icon" src="/img/decorative/icons/li_line_icon.png" alt="LinkedIn-ikon" /> {/* LinkedIn-ikon */}
+                <img className="icon" src="/img/decorative/icons/li_icon_inverted.svg" alt="LinkedIn-ikon" /> {/* LinkedIn-ikon */}
               </a>
               <a
                 href="https://www.youtube.com/@gronatryck508"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="icon" src="/img/decorative/icons/yt_line_icon.png" alt="YouTube-ikon" /> {/* YouTube-ikon */}
+                <img className="icon" src="/img/decorative/icons/yt_icon_inverted.svg" alt="YouTube-ikon" /> {/* YouTube-ikon */}
               </a>
               <a
                 href="https://www.instagram.com/gronatryck/"
                 target="_blank"
                 rel="noreferrer"
               >
-                <img className="icon" src="/img/decorative/icons/ig_line_icon.png" alt="Instagram-ikon" /> {/* Instagram-ikon */}
+                <img className="icon" src="/img/decorative/icons/ig_icon_inverted.svg" alt="Instagram-ikon" /> {/* Instagram-ikon */}
               </a>
             </div>
           </div>

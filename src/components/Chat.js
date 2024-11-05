@@ -1,10 +1,10 @@
 import React, { useState, useRef, useEffect } from "react";
-import "../styles/chat.css"; 
-import { LuMessageCircle } from "react-icons/lu"; 
+import "../styles/chat.css";
+import { LuMessageCircle } from "react-icons/lu";
 
 const Chat = () => {
-  const [isVisible, setIsVisible] = useState(false); 
-  const chatRef = useRef(null); 
+  const [isVisible, setIsVisible] = useState(false);
+  const chatRef = useRef(null);
 
   // Funktion för att växla mellan att visa och dölja chatten
   const toggleChat = () => {
@@ -21,7 +21,7 @@ const Chat = () => {
   useEffect(() => {
     // Lägg till event listener för klick utanför chatten
     document.addEventListener("mousedown", handleClickOutside);
-    
+
     // Rensa event listener när komponenten avmonteras
     return () => {
       document.removeEventListener("mousedown", handleClickOutside);
@@ -38,7 +38,12 @@ const Chat = () => {
           className="chat-toggle-button"
           style={{ fontSize: "2.8rem" }} // Sätter storlek på knappen
         >
-          <LuMessageCircle /> {/* Visar meddelande-ikon */}
+          <img
+            src="/img/decorative/icons/chat_icon.svg"
+            width="28px"
+            height="28px"
+            alt="ikon av en pratbubbla"
+          />
         </button>
       )}
 
@@ -82,4 +87,3 @@ const Chat = () => {
 };
 
 export default Chat;
-

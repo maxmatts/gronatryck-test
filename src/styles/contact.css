@@ -50,7 +50,7 @@
 
     .contact-info {
         flex-direction: column;
-        flex-basis: 20%;
+        flex-basis: 25%;
         margin: 0;
         justify-content: flex-start;
       }
@@ -61,6 +61,7 @@
       margin-top: 5rem;
       margin-bottom: 5rem;
         justify-content: space-between;
+        width: 80%;
     }
   
         .contact-container{

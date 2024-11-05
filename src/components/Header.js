@@ -86,13 +86,13 @@ export default function Header() {
           >
             {location.pathname === "/cart" ? (
               <img
-                src="/img/decorative/icons/shopbag_filled.svg"
+                src="/img/decorative/icons/shop_bag_icon_filled.svg"
                 alt="Varukorg"
                 className="header-icon cart-icon"
               />
             ) : (
               <img
-                src="/img/decorative/icons/shopbag_icon.svg"
+                src="/img/decorative/icons/shop_bag_icon.svg"
                 alt="Varukorg"
                 className="header-icon cart-icon"
               />

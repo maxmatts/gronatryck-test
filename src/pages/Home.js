@@ -125,51 +125,38 @@ const Home = () => {
         </section>
 
         <section className="testimonial-section">
-          <div className="testimonial-label">
-            {/* Optional label section can go here */}
-          </div>
+  <div className="testimonial-quote">
+    <h2 className="section-heading heading-3">
+      Ace stödjer rättvisa kläder
+    </h2>
 
-          <div className="testimonial-content">
-            <blockquote className="testimonial-quote">
-              <h2 className="section-heading heading-3">
-                Popgruppen Stars väljer rättvisemärkta kläder för sina fans
-              </h2>
-              
-              <div className="testimonial-content">
-                <div className="testimonial-image">
-                  <img
-                    src="/img/decorative/gronatryck_fence_img.png"
-                    alt="två kvinnor som står längst ett stängsel"
-                  />
-                  
-                  
-                </div>
+    <div className="testimonial-content">
+      <figure className="testimonial-image">
+        <img
+          src="/img/decorative/gronatryck_fence_img.png"
+          alt="två kvinnor som står längst ett stängsel"
+        />
+      </figure>
 
-                <div className="testimonial-text-container">
-                  {" "}
-                  {/* Added this div for styling */}
-                  <p className="main-body testimonial-text">
-                    “Vi vill att vår merch speglar våra värderingar, och tack
-                    vare Gröna Tryck kunde vi erbjuda våra fans produkter vi
-                    verkligen står bakom,” säger popduon.
-                  </p>
-                  <p className="main-body testimonial-text">
-                    “Det var också otroligt smidigt att beställa i bulk och få
-                    allt levererat snabbt, samtidigt som vi vet att produkterna
-                    är certifierade och miljövänliga.”
-                  </p>
-                  <div className="">
-                    <Button
-                      to="/kundcase"
-                      className="main-btn btn-container"
-                      content="Se mer om våra arbeten"
-                    />
-                  </div>
-                </div>
-              </div>
-            </blockquote>
-          </div>
-        </section>
+      <div className="testimonial-text-container">
+        <p className="main-body testimonial-text">
+          “Vi vill att vår merch speglar våra värderingar, och tack vare Gröna Tryck kunde vi erbjuda våra fans produkter vi verkligen står bakom,” säger popduon.
+        </p>
+        <p className="main-body testimonial-text">
+          “Det var också otroligt smidigt att beställa i bulk och få allt levererat snabbt, samtidigt som vi vet att produkterna är certifierade och miljövänliga.”
+        </p>
+
+        <Button
+          to="/kundcase"
+          className="main-btn btn-container"
+          content="Se mer om våra arbeten"
+        />
+      </div>
+    </div>
+  </div>
+</section>
+
+      
 
         {/* Section 7: Membership Registration */}
         <section className="membership-section">

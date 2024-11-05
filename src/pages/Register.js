@@ -4,6 +4,7 @@ import "../styles/login.css";
 import "../styles/register.css";
 
 function Register({ onRegister }) {
+  const [error, setError] = useState("");
   const [user, setUser] = useState({
     email: "",
     password: "",
@@ -29,9 +30,13 @@ function Register({ onRegister }) {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    const { email, password, firstname, lastname, phoneNumber ,street, city, country, zipcode } = user;
+    const { email, password, confirmPassword, firstname, lastname, phoneNumber ,street, city, country, zipcode } = user;
     if (!email || !password || !firstname || !lastname || !phoneNumber || !street || !city || !country || !zipcode) {
-      alert("Vänligen fyll i alla obligatoriska fält.");
+      setError("Vänligen fyll i alla obligatoriska fält.")
+      return;
+    }
+    if (password !== confirmPassword){
+      setError("Lösenorden matchar inte varandra.")
       return;
     }
 
@@ -54,6 +59,7 @@ function Register({ onRegister }) {
         <h1 className="main-heading page-heading">Registrera dig</h1>
       </div>
       <div className="login-container">
+        
         {registrationSuccess ? (
           <p className="success-message">Registreringen lyckades! Du omdirigeras till inloggningssidan om några sekunder...</p>
         ) : (
@@ -224,6 +230,7 @@ function Register({ onRegister }) {
                   Skapa konto
                 </button>
               </div>
+              {error && <p style={{textAlin: 'center', color: "red"}}>{error}</p> }
             </form>
           </>
         )}

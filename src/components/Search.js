@@ -59,8 +59,9 @@ export default function SearchBar({ handleClick, isActive }) {
       {/* Visar sökresultaten om det finns en sökterm */}
 
       <div className={`dropdown-list ${searchTerm.length > 0 ? "active" : ""}`}>
-        <h2>Din sökning gav {results.length} resultat...</h2>
+      
         <div className="container search-items-wrapper">
+        <h2>Din sökning gav {results.length} resultat...</h2>
           {results.map((item) => (
             <Link
               className="h-card slide-in"

@@ -20,6 +20,7 @@
     justify-content: center;
     margin-bottom: 2rem;
     border-bottom: 2px solid var(--primary-green);
+    font-size: 1rem;
 }
 
 .tab {
@@ -27,10 +28,12 @@
     /* padding: 1rem 2rem; */
     margin: 0.5rem 0.5rem;
     cursor: pointer;
-    font-size: var(--fontSizeSM);
+    font-size: var(--fontSizeXS);
     color: var(--primary-green);
     border-radius: 0.6rem;
     font-weight: 500;
+    text-align: center;
+    
 }
 
 .tab.active {

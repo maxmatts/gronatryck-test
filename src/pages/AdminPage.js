@@ -42,7 +42,7 @@ function AdminPage({ onLogout }) {
         <div className="admin-card">
           <h3>Omsättning</h3>
           <div className="data">
-            <span className="number">15,000 SEK</span>
+            <span className="number">0 SEK</span>
             <span className="percentage">+65%</span>
           </div>
         </div>

@@ -9,6 +9,11 @@
   align-items: center;
 }
 
+.test-heading{
+  margin: auto;
+  width: 75%;
+}
+
 .service-detail {
   height: 100vh;
 }

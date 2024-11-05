@@ -17,10 +17,10 @@ export default function PopularCategories({ title, categoryList, grid }) {
           return (
             <Link to={item.to} className="category" key={item.label}>
               <img src={item.img} alt={item.alt} />{" "}
-              {/* Display category image */}
+             
               <div className="label-with-bg">
                 <div className="category-label">{item.label}</div>{" "}
-                {/* Display category label */}
+              
               </div>
             </Link>
           );

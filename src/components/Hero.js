@@ -25,10 +25,7 @@ export default function Hero() {
           </div>
           <p>
             Välkommen till Gröna Tryck – din pålitliga partner för hållbara och
-            rättvisemärkta trycklösningar och profilkläder. Vi kombinerar modern
-            teknik med miljömedvetenhet för att leverera högkvalitativa
-            produkter, anpassade efter dina behov. Utforska vårt utbud och var
-            med och bidra till en mer hållbar framtid.
+            rättvisemärkta trycklösningar och profilkläder.
           </p>
           <div style={{ display: "flex", gap: "1.6rem" }}>
             {" "}
