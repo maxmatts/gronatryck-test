@@ -3,7 +3,7 @@ html {
 }
 
 .stanley-container {
-    width: 100%;
+    width: 90%;
     margin: auto;
 }
 
@@ -217,4 +217,14 @@ html {
         justify-content: space-around; 
         width: 100%;
     }
+}
+
+
+@media (min-width: 1005px) {
+
+
+    .stanley-container{
+        width: 100%;
+    }
+
 }

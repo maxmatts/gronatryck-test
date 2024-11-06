@@ -306,6 +306,11 @@
   .category img {
     height: 22rem;
   }
+  .testimonial-section{
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+  }
 
   .testimonial-content {
     flex-direction: row;

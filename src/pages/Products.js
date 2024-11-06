@@ -194,7 +194,7 @@ const Products = () => {
             className="filter-toggle-btn"
             onClick={() => setIsFilterVisible((prev) => !prev)}
           >
-            Filtrea och sortera
+            Filtrera och sortera
             <span className={`toggle-arrow ${isFilterVisible ? "active" : ""}`}>
               <LuChevronDown />
             </span>

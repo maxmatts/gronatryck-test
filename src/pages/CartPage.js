@@ -225,8 +225,8 @@ function CartPage() {
                     key={item.productId + item.selectedColor + item.size}
                   >
                     <div className="cart-item">
-                      <Link
-                        to={`/produkter/${item.productId}`}
+                    <Link
+                        to={`/produkter/${item.productId}/${product.slug}`}
                         className="cart-item-link"
                       >
                         <img

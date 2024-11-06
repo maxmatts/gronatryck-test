@@ -43,7 +43,7 @@ const Stanley = () => {
           <div className="stanley-text-container">
             <div className="text-container main-body">
               <h2 id="stanley-titel" className="section-heading heading-3">
-                Hållbara Kläder i Toppklass
+                Hållbara kläder i toppklass
               </h2>
               <p className="main-body">
                 Sedan 2013 har Gröna Tryck och Stanley/Stella samarbetat för att

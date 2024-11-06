@@ -80,7 +80,7 @@ const Footer = () => {
               src="./img/decorative/gronatryck_logo_webb.png"
               alt="Gröna Tryck logo" // Alt-text för logo
             />
-            <p>Tryck med omtanke <br /> - hållbarhet i varje detalj</p> {/* Tagline för företaget */}
+            
           </div>
           <div className="footer-column">
             <h4>Kontakt</h4> {/* Rubrik för kontaktinformation */}

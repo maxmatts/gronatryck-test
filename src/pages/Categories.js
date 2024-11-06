@@ -1,4 +1,6 @@
+import Breadcrumb from "../components/Breadcrumb";
 import PopularCategories from "../components/PopularCategories";
+import { Link } from "react-router-dom";
 
 export default function Sortiment() {
   const categorylist = [
@@ -56,12 +58,12 @@ export default function Sortiment() {
   return (
     <div className="container" style={{ marginBlockStart: "10.8rem" }}>
       <div className="categori">
-        <div className="nav-heading">
-          <h1 className="section-heading heading-3">Populära Kategorier</h1>
-        </div>
-
-        <PopularCategories categoryList={categorylist} />
+        <h1 className="section-heading heading-3">Kläder</h1>
       </div>
+      <div style={{margin: "1rem 0"}}>
+      <Link to="/sortiment">Gå till sortiment</Link> 
+      </div>
+      <PopularCategories categoryList={categorylist} />
     </div>
   );
 }
