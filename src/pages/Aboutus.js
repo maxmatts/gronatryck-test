@@ -35,7 +35,7 @@ const AboutUs = () => {
           <div className="about-text-containers">
             <div className="text-container main-body">
               <h2 className="section-heading heading-3">
-                Norrländska problemlösare..
+                Norrländska problemlösare
               </h2>
               <p>
                 Vi är ett gäng norrländska problemlösare som brinner för tryck,
@@ -72,7 +72,7 @@ const AboutUs = () => {
               <div className="img-wrapper">
                 <img
                   className="about-img"
-                  src="/img/decorative/derek-owens-YCbJCM249KE-unsplash.jpg"
+                  src="/img/decorative/gronatryck_profilepic_2.png"
                   alt="Fejk bild på joel"
                 />
                 <h2 className="section-heading heading-3 stanley-heading">
@@ -83,7 +83,7 @@ const AboutUs = () => {
               <div className="img-wrapper">
                 <img
                   className="about-img"
-                  src="/img/decorative/alano-oliveira-3UknV3EZVBs-unsplash.jpg"
+                  src="/img/decorative/gronatryck_profilepic_1.png"
                   alt="Fejk bild på Josef"
                 />
                 <h2 className="section-heading heading-3 stanley-heading">

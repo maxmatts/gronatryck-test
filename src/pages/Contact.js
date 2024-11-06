@@ -49,17 +49,22 @@ function Contact() {
   return (
     <div>
       {submitted ? (
-        <div className="submitted">
-          <Link to="/">Hem</Link>
-          <h2 className="main-body">Tack för att du kontaktar oss! <br/>Vi kommer att kontakta dig så snart som möjligt.</h2>
-        </div>
+      <div className="submitted-container">
+      <div className="submitted-content">
+        <Link to="/" className="home-link">Hem</Link>
+        <h2 className="thank-you-message main-body">
+          Tack för att du kontaktar oss! <br/>
+          Vi kommer att kontakta dig så snart som möjligt.
+        </h2>
+      </div>
+    </div>
       ) : (
         <div className="contact-page">
       
 
       <section className="hero-section-2">
         <img
-          src="/img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          src="/img/decorative/gronatryck_forest_img.png" // Bakgrundsbild för hero-sektionen
           alt="Hero"
           className="hero-image"
           id="aboutus-hero-image"

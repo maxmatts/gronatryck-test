@@ -16,10 +16,41 @@
   .contact-section p {
     margin: 0.5rem 0;
   }
-  
-  .submitted {
-    margin-top: 9rem;
+
+
+
+
+  .submitted-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 50vh;
+    padding: 2rem;
+    background-color: #fafafa;
   }
+  
+  .submitted-content {
+    text-align: center;
+    padding: 1.5rem;
+  }
+  
+  .home-link {
+    font-size: 1rem;
+    color: var(--primary-green);
+    text-decoration: none;
+    margin-bottom: 1rem;
+    font-weight: 500;
+  }
+  
+  .thank-you-message {
+    font-size: 1.125rem;
+    color: #444;
+    margin: 0;
+    line-height: 1.4;
+  }
+
+
+
   
   .contact-page-container {
     margin-top: 2rem;

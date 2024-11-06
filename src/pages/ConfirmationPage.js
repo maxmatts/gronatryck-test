@@ -22,7 +22,7 @@ const ConfirmationPage = () => {
             <p className="main-body confirmation-text">
               Vi tittar nu på din offert. Vi kontaktar er så fort vi kan!
             </p>
-            <p className="main-body ">
+            <p className="main-body confirmation-text">
               För att se dina ordrar, gå till din profil.
             </p>
           </div>

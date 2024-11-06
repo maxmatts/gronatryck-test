@@ -7,7 +7,7 @@ const services = () => {
     <div>
          <section className="hero-section-2">
         <img
-          src="/img/decorative/DJI_20241010094358_0007_D-Enhanced-NR.jpg" // Bakgrundsbild för hero-sektionen
+          src="/img/decorative/gronatryck_forest_img.png" // Bakgrundsbild för hero-sektionen
           alt="Hero"
           className="hero-image"
           id="aboutus-hero-image"
@@ -41,7 +41,7 @@ const services = () => {
         <div className="resell-page-container">
           <div className="resell-container">
             <h2 className="section-heading heading-3 resell-heading">
-              Bli Återförsäljare med Gröna Tryck
+              Bli återförsäljare med Gröna Tryck
             </h2>
             <p className="main-body resell-text-container">
               Söker du en pålitlig partner för profilprodukter som kan stärka
